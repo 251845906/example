@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Top from './commonality/Top';
+import Nav from './commonality/Nav';
 import Index from './page/Index';
 import Situation from './page/situation/main';
 import New from './page/new/main';
@@ -19,6 +20,7 @@ class Page extends Component{
                 <Router>
                     <div>
                         <Top />
+                        <Nav />
                         <Switch>
                             <Route exact path="/" component={Index}/>
                             <Route path="/situation" component={Situation}/>
