@@ -54,6 +54,7 @@ Explain:        Clearfix
     display: block;
     height: 0;
     clear: both;
+    overflow: hidden;
     visibility: hidden;
 }
 
@@ -66,6 +67,7 @@ Explain:        Clearfix
 }
 .box{
     max-width:1920px;
+    min-width: 1200px;
     width: 100%;
 }
 .fl{

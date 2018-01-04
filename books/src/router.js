@@ -9,8 +9,6 @@ import New from './page/new/main';
 import Service from './page/service/main';
 import Resource from './page/resource/main';
 import Exchange from './page/exchange/main';
-
-
 import configureStore from './redux/store';
 const store = configureStore(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 class Page extends Component{

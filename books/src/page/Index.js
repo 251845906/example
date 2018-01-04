@@ -1,20 +1,36 @@
 import React,{ Component } from 'react';
 import { Link } from 'react-router-dom';
-import './css/index.css';
-
+import { Carousel } from 'antd'
 const Index = () => {
     return(
-        <div>
+        <div className='box Index'>
             <Banner />
         </div>
     )
 
 };
 class Banner extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            BannerNum:0
+        }
+    }
     render(){
         return(
-            <div className="box">
-                <div className="banner"> </div>
+            <div className="banner">
+                <Carousel
+                    autoplay={true}
+                    autoplaySpeed={3000}
+                    arrows={true}
+                    focusOnSelect ={true}
+                >
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
+
+                </Carousel>
                 <div className="container">
                     <Link to="/"><img src={require('../images/logo.png')} alt="山西工商学院图书馆"/></Link>
                     <Link to="/"><img src={require('../images/logo.png')} alt="山西工商学院图书馆"/></Link>

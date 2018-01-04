@@ -26,7 +26,7 @@ function Ajax (opt) {
         // 404: 未找到页面
         // return request
 
-        if (request.readyState==4 && request.status==200){
+        if (request.readyState === 4 && request.status === 200){
             //     // 当请求完成相应就绪    文件也‘ok’时候进行下面代码
             //     request.responseText	//获得字符串形式的响应数据
             //     request.responseXML	   //获得 XML 形式的响应数据。
