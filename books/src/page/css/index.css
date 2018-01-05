@@ -1,9 +1,42 @@
-.banner {
+.Index .banner {
   position: relative;
   height: 500px;
   width: 100%;
 }
-.banner .container {
+.Index .banner .ant-carousel .slick-slide {
+  height: 500px;
+}
+.Index .banner .slick-slide ._banner_bj {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, 0);
+  /* Safari and Chrome */
+  width: 1920px;
+  height: 500px;
+}
+.Index .banner .ant-select-selection {
+  height: 40px;
+  border-radius: 0;
+}
+.Index .banner .ant-select-selection__rendered {
+  line-height: 40px;
+  text-indent: 15px;
+  font-size: 14px;
+  color: black;
+}
+.Index .banner .ant-select-arrow {
+  color: #000;
+}
+.Index .banner .Index_option .ant-select-dropdown-menu-item {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+}
+.Index .banner .container {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -13,7 +46,95 @@
   /* Safari and Chrome */
   top: 55px;
 }
-.banner .container a {
-  text-align: center;
+.Index .banner .container a {
+  margin: 0 auto;
   display: block;
+}
+.Index .banner .container a:nth-child(1) {
+  width: 144px;
+  height: 145px;
+  margin-bottom: 25px;
+}
+.Index .banner .container a:nth-child(2) {
+  margin-bottom: 60px;
+  width: 500px;
+  height: 79px;
+}
+.Index .banner .container form {
+  width: 647px;
+  height: 40px;
+  margin: 0 auto;
+}
+.Index .banner .container form input[type="text"] {
+  width: 308px;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  text-indent: 10px;
+  vertical-align: top;
+  margin-right: 12px;
+}
+.Index .banner .container form .search {
+  width: 98px;
+  height: 40px;
+  background: #5a7aea;
+  color: #fff;
+  border: none;
+  vertical-align: top;
+  margin-right: 12px;
+  cursor: pointer;
+  text-indent: -10px;
+}
+.Index .banner .container form .translate:active,
+.Index .banner .container form .search:active {
+  background: #6a86e8;
+}
+.Index .banner .container form .translate {
+  text-indent: -5px;
+  width: 106px;
+  height: 40px;
+  background: #5a7aea;
+  color: #fff;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+.Index .Index_container .notice {
+  height: 50px;
+  background: #f6f6f8;
+}
+.Index .Index_container .notice .container {
+  height: 50px;
+}
+.Index .Index_container .notice .container .notice_title {
+  display: inline-block;
+  line-height: 50px;
+  color: #3662fd;
+  font-size: 14px;
+  vertical-align: top;
+}
+.Index .Index_container .notice .container .more a {
+  float: right;
+  line-height: 50px;
+  color: #3662fd;
+  font-size: 14px;
+  vertical-align: top;
+}
+.Index .Index_container .notice .ant-carousel {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+}
+.Index .Index_container .notice .ant-carousel .slick-slide {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  color: #000;
+}
+.Index .Index_container .notice .ant-carousel .dian {
+  font-size: 50px;
+  vertical-align: top;
+  line-height: 40px;
+  padding-right: 3px;
 }

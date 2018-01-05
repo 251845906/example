@@ -1,18 +1,154 @@
-.banner{
-  position: relative;
-  height: 500px;
-  width: 100%;
-  .container{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0); /* IE 9 */
-    -webkit-transform: translate(-50%,0); /* Safari and Chrome */
-    top: 55px;
+.Index{
+  .banner{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    //==================
+    //banner
+    .ant-carousel .slick-slide {
+      height: 500px;
+    }
+    .slick-slide ._banner_bj {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0); /* IE 9 */
+      -webkit-transform: translate(-50%, 0); /* Safari and Chrome */
+      width: 1920px;
+      height: 500px;
+    }
+    //===============
+    //===============================
+    //select -antd
+    .ant-select-selection{
+      height: 40px;
+      border-radius: 0;
+    }
+    .ant-select-selection__rendered{
+      line-height: 40px;
+      text-indent: 15px;
+      font-size: 14px;
+      color: black;
+    }
+    .ant-select-arrow{
+      color: #000;
+    }
+    .Index_option .ant-select-dropdown-menu-item{
+      height: 40px;
+      line-height: 40px;
+      padding: 0 12px;
+    }
+    //===============================
+    .container{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0);
+      -ms-transform: translate(-50%,0); /* IE 9 */
+      -webkit-transform: translate(-50%,0); /* Safari and Chrome */
+      top: 55px;
+      a{
+       margin:0 auto;
+        display: block;
+      }
+      a:nth-child(1){
+        width: 144px;
+        height: 145px;
+        margin-bottom: 25px;
+      }
+      a:nth-child(2){
+        margin-bottom: 60px;
+        width: 500px;
+        height: 79px;
+      }
 
-    a{
-      text-align: center;
-      display: block;
+      form{
+        width: 647px;
+        height: 40px;
+        margin: 0 auto;
+
+        input[type="text"]{
+          width: 308px;
+          height: 40px;
+          line-height: 40px;
+          border:none;
+          text-indent: 10px;
+          vertical-align: top;
+          margin-right: 12px;
+        }
+        .search{
+          width: 98px;
+          height: 40px;
+          background: #5a7aea;
+          color: #fff;
+          border:none;
+          vertical-align: top;
+          margin-right: 12px;
+          cursor: pointer;
+          text-indent: -10px;
+        }
+        .translate:active,.search:active{
+          background: #6a86e8;
+        }
+        .translate{
+          text-indent: -5px;
+          width: 106px;
+          height: 40px;
+          background: #5a7aea;
+          color: #fff;
+          border:none;
+          vertical-align: top;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .Index_container{
+    .notice{
+      height: 50px;
+      background: #f6f6f8;
+      .container{
+        height: 50px;
+        .notice_title{
+          display: inline-block;
+          line-height: 50px;
+          color: #3662fd;
+          font-size: 14px;
+          vertical-align: top;
+        }
+        .more{
+          a{
+            float: right;
+            line-height: 50px;
+            color: #3662fd;
+            font-size: 14px;
+            vertical-align: top;
+          }
+
+        }
+      }
+      //=====================================
+      //轮博栏
+      .ant-carousel{
+        display: inline-block;
+        width: 300px;
+        height: 50px;
+        .slick-slide {
+          text-align: center;
+          height: 50px;
+          line-height: 50px;
+          overflow: hidden;
+          color: #000;
+        }
+        .dian{
+          font-size: 50px;
+          vertical-align: top;
+          line-height: 40px;
+          padding-right: 3px;
+        }
+      }
+      //=====================================
+
     }
   }
 }
