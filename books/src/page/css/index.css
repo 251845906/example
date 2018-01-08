@@ -1,3 +1,9 @@
+.Index .dian {
+  font-size: 50px;
+  vertical-align: top;
+  line-height: 40px;
+  padding-right: 3px;
+}
 .Index .banner {
   position: relative;
   height: 500px;
@@ -102,6 +108,7 @@
 .Index .Index_container .notice {
   height: 50px;
   background: #f6f6f8;
+  margin-bottom: 20px;
 }
 .Index .Index_container .notice .container {
   height: 50px;
@@ -132,9 +139,54 @@
   overflow: hidden;
   color: #000;
 }
-.Index .Index_container .notice .ant-carousel .dian {
-  font-size: 50px;
-  vertical-align: top;
-  line-height: 40px;
-  padding-right: 3px;
+.Index .Index_container .trends ._trendsContainer {
+  width: 778px;
+  height: 398px;
+  border: 1px solid #e0dfdf;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsTittle {
+  height: 38px;
+  width: 100%;
+  background: #f5f5f5 url("../../images/index_new_title.png") no-repeat top left;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft {
+  margin: 25px;
+  height: 310px;
+  width: 368px;
+  padding: 18px;
+  border: 1px solid #e0dfdf;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft .ant-carousel {
+  /* 最外围的框大小*/
+  display: inline-block;
+  width: 332px;
+  height: 256px;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft .ant-carousel .slick-slide {
+  /* 内容大小和样式*/
+  text-align: center;
+  width: 332px;
+  height: 256px;
+  line-height: 50px;
+  overflow: hidden;
+  color: #000;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft ._menu {
+  margin-top: 4px;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft ._menu span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e0dfdf;
+  text-align: center;
+  line-height: 14px;
+  color: #d2d2d2;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.Index .Index_container .trends ._trendsContainer ._trendsLeft ._menu span.active {
+  border: 1px solid #5a7aea;
+  background: #5a7aea;
+  color: #fff;
 }

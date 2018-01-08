@@ -49,16 +49,19 @@ Name:           style_clearfix
 Example:        class="clearfix|cl"
 Explain:        Clearfix
 */
-.cl:after,.clearfix:after {
+
+.clearfix:before,.clearfix:after {
     content: ".";
     display: block;
     height: 0;
-    clear: both;
+    /*clear: both;*/
     overflow: hidden;
     visibility: hidden;
 }
-
-.cl,.clearfix {
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
     zoom: 1;
 }
 .container {
