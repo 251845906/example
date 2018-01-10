@@ -218,28 +218,28 @@ class About extends Component{
                     >
                         <TabPane tab="电子资料" key="1" className="clearfix">
                             <ul className="fl">
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
+                                <li><Link to="#">山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#">关于产品试用通知</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">关于开通电子资源 </Link></li>
+                                <li><Link to="#">考试题库</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">关于开通电子资源 </Link></li>
                             </ul>
                             <ul className="fl">
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
-                                <li> </li>
+                                <li><Link to="#">山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#">关于产品试用通知</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">关于开通电子资源 </Link></li>
+                                <li><Link to="#">考试题库</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#">关于开通电子资源 </Link></li>
                             </ul>
                         </TabPane>
                         <TabPane tab="学术研究" key="2" className="clearfix">
