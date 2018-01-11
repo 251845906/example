@@ -10,6 +10,7 @@ import Service from './page/service/main';
 import Resource from './page/resource/main';
 import Exchange from './page/exchange/main';
 import configureStore from './redux/store';
+import Footer from './commonality/Footer'
 const store = configureStore(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 class Page extends Component{
     render(){
@@ -27,6 +28,7 @@ class Page extends Component{
                             <Route path="/resource" component={Resource}/>
                             <Route path="/exchange" component={Exchange}/>
                         </Switch>
+                        <Footer />
                     </div>
                 </Router>
             </Provider>

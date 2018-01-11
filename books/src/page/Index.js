@@ -91,6 +91,8 @@ class Container extends Component{
                 <Trends />
                 {/*图书馆介绍     about*/}
                 <About />
+                {/*友情链接*/}
+
             </div>
         )
     }
@@ -206,7 +208,7 @@ class Trends extends Component{
 class About extends Component{
     render(){
         return(
-            <div className="container _about">
+            <div className="container _about clearfix">
                 {/*about 左侧*/}
                 <div className="about_Left fl clearfix">
                     {/*=======================================*/}
@@ -214,48 +216,120 @@ class About extends Component{
                     <Tabs
                         defaultActiveKey="1"
                         animated = {true}
-
                     >
                         <TabPane tab="电子资料" key="1" className="clearfix">
                             <ul className="fl">
-                                <li><Link to="#">山西工商学院第二届大学生人文</Link></li>
-                                <li><Link to="#">关于产品试用通知</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">关于开通电子资源 </Link></li>
-                                <li><Link to="#">考试题库</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
                             </ul>
                             <ul className="fl">
-                                <li><Link to="#">山西工商学院第二届大学生人文</Link></li>
-                                <li><Link to="#">关于产品试用通知</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">关于开通电子资源 </Link></li>
-                                <li><Link to="#">考试题库</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">山西工商学院大学生人文知识竞赛</Link></li>
-                                <li><Link to="#">关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用 通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
                             </ul>
+                            <div className="more fl clearfix"><Link to="#">更多</Link></div>
                         </TabPane>
                         <TabPane tab="学术研究" key="2" className="clearfix">
-                            deee
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用 通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <div className="more fl clearfix"><Link to="#">更多</Link></div>
                         </TabPane>
                         <TabPane tab="阅读指导" key="3" className="clearfix">
-                            xxx
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用 通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <div className="more fl clearfix"><Link to="#">更多</Link></div>
                         </TabPane>
                         <TabPane tab="规章制度" key="4" className="clearfix">
-                            sss
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <ul className="fl">
+                                <li><Link to="#"><span className="dian"></span>山西工商学院第二届大学生人文</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于产品试用 通知</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                                <li><Link to="#"><span className="dian"></span>考试题库</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>山西工商学院大学生人文知识竞赛</Link></li>
+                                <li><Link to="#"><span className="dian"></span>关于开通电子资源 </Link></li>
+                            </ul>
+                            <div className="more fl clearfix"><Link to="#">更多</Link></div>
                         </TabPane>
                     </Tabs>
                 </div>
                 {/*about 右侧*/}
                 <div className="about_Right fl">
-                    <p className="_rightTitle">数字资源 <Link to="#" className="more">MORE > ></Link></p>
+                    <p className="_rightTitle">数字资源 <Link to="#" className="more">MORE >></Link></p>
                     <ul>
                         <li><Link to="#"><span className="dian"> </span>SCI—SSCI引文索引库</Link></li>
                         <li><Link to="#"><span className="dian"> </span>Ei Village美国工程索引库 </Link></li>

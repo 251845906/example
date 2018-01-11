@@ -120,23 +120,23 @@
       }
     }
   }
-  .Index_container{
+  .Index_container {
     //*===============================*/公告css
-    .notice{
+    .notice {
       height: 50px;
       background: #f6f6f8;
       margin-bottom: 20px;
-      .container{
+      .container {
         height: 50px;
-        .notice_title{
+        .notice_title {
           display: inline-block;
           line-height: 50px;
           color: #3662fd;
           font-size: 14px;
           vertical-align: top;
         }
-        .more{
-          a{
+        .more {
+          a {
             float: right;
             line-height: 50px;
             color: #3662fd;
@@ -148,7 +148,7 @@
       }
       //=====================================
       //轮博栏
-      .ant-carousel{
+      .ant-carousel {
         display: inline-block;
         width: 300px;
         height: 50px;
@@ -163,30 +163,30 @@
       }
       //=====================================
     }
-    .trends{
-      ._trendsContainer{
+    .trends {
+      ._trendsContainer {
         width: 780px;
         height: 400px;
-        border:1px solid #e0dfdf;
+        border: 1px solid #e0dfdf;
         margin-bottom: 20px;
-        ._trendsTittle{
+        ._trendsTittle {
           height: 38px;
           width: 100%;
           background: #f5f5f5 url("../../images/index_new_title.png") no-repeat top left;
         }
-        ._trendsLeft{
-          margin:25px;
+        ._trendsLeft {
+          margin: 25px;
           height: 310px;
           width: 368px;
           padding: 18px;
-          border:1px solid #e0dfdf;
+          border: 1px solid #e0dfdf;
           //=============================
           //new 轮播
-          .ant-carousel{  /* 最外围的框大小*/
+          .ant-carousel { /* 最外围的框大小*/
             display: inline-block;
             width: 332px;
             height: 256px;
-            .slick-slide {/* 内容大小和样式*/
+            .slick-slide { /* 内容大小和样式*/
               text-align: center;
               width: 332px;
               height: 256px;
@@ -195,33 +195,33 @@
               color: #000;
             }
           }
-          ._menu{
+          ._menu {
             margin-top: 4px;
-            span{
+            span {
               display: inline-block;
               width: 16px;
               height: 16px;
-              border:1px solid #e0dfdf;
+              border: 1px solid #e0dfdf;
               text-align: center;
               line-height: 14px;
               color: #d2d2d2;
               margin-left: 6px;
               cursor: pointer;
             }
-            span.active{
-              border:1px solid #5a7aea;
-              background:#5a7aea;
+            span.active {
+              border: 1px solid #5a7aea;
+              background: #5a7aea;
               color: #fff;
             }
           }
         }
-        ._trendsRight{
-          margin:25px;
+        ._trendsRight {
+          margin: 25px;
           width: 300px;
-          ._RightTitle{
+          ._RightTitle {
             font-size: 16px;
             line-height: 26px;
-            span{
+            span {
               font-size: 14px;
               background: #5a7aea;
               color: #fff;
@@ -231,18 +231,18 @@
               margin-right: 16px;
             }
           }
-          ul{
+          ul {
             margin-top: 25px;
           }
-          li{
+          li {
             line-height: 30px;
             font-size: 14px;
             width: 300px;
             overflow: hidden;
-            text-overflow:ellipsis;
+            text-overflow: ellipsis;
             white-space: nowrap;
           }
-          .more{
+          .more {
             display: inline-block;
             width: 70px;
             height: 28px;
@@ -254,82 +254,174 @@
           }
         }
       }
-      ._trendsMenu{
+      ._trendsMenu {
         margin-left: 20px;
         width: 300px;
         height: 400px;
         overflow: hidden;
-        li{
+        li {
           width: 100%;
           height: 100px;
         }
-        figure{
+        figure {
           width: 50%;
           height: 100%;
           float: left;
           text-align: center;
-          img{
+          img {
             margin-top: 25px;
           }
-          figcaption{
+          figcaption {
             font-size: 14px;
             color: #fff;
             line-height: 40px;
           }
         }
-        li:nth-child(1){
-          figure:nth-child(1){
+        li:nth-child(1) {
+          figure:nth-child(1) {
             background: #b973c4;
           }
-          figure:nth-child(2){
+          figure:nth-child(2) {
             background: #90ba4d;
           }
         }
-        li:nth-child(2){
-          figure:nth-child(1){
+        li:nth-child(2) {
+          figure:nth-child(1) {
             background: #3aabb5;
           }
-          figure:nth-child(2){
+          figure:nth-child(2) {
             background: #e27594;
           }
         }
-        li:nth-child(3){
-          figure:nth-child(1){
+        li:nth-child(3) {
+          figure:nth-child(1) {
             background: #00a0fb;
           }
-          figure:nth-child(2){
+          figure:nth-child(2) {
             background: #00cafd;
           }
         }
-        li:nth-child(4){
-          figure:nth-child(1){
+        li:nth-child(4) {
+          figure:nth-child(1) {
             background: #c387f7;
           }
-          figure:nth-child(2){
+          figure:nth-child(2) {
             background: #275c96;
           }
         }
       }
     }
-    ._about{
-      .about_Left{
+    ._about {
+      .about_Left {
         width: 780px;
-        border:1px solid #e0dfdf;
+        border: 1px solid #e0dfdf;
         //=========================================
         //tab卡css
-        .ant-tabs{
-          width: 780px;
-        }
-        .ant-tabs-tab{
-          width: 195px;
-          height: 40px;
-          text-align: center;
-          margin:0;
+        .ant-tabs {
+          //最外围的框大小  总体内容的大小
+          width: 778px;
+
+          .ant-tabs-bar {
+            //标题栏
+            width: 778px;
+            height: 40px;
+            background: #f5f5f5;
+            margin-bottom: 0px;
+            .ant-tabs-nav-container {
+              //标题栏内容
+              .ant-tabs-tab-prev {
+              }
+              .ant-tabs-tab-next {
+              }
+              //这个两个是内容超出标题栏大小的时候显示的上下按钮
+              .ant-tabs-tab {
+                //标题栏内容
+                //(注) teb 有个margin 不需要的话要设置
+                //(注) teb 有个padding 不需要的话要设置
+                padding: 0;
+                margin: 0;
+                width: 194px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                color: #000;
+                transition: 0s;
+              }
+              .ant-tabs-tab-active {
+                //标题选中状态
+                background: #5a7aea;
+                color: #fff;
+                transition: 0s;
+              }
+              .ant-tabs-ink-bar {
+                background: none;
+
+              }
+            }
+          }
+          .ant-tabs-content {
+            width: 778px;
+            height: 360px;
+            //内容栏
+            padding: 18px;
+            .ant-tabs-tabpane {
+              //内容栏里面内容
+              width: 778px;
+              height: 360px;
+
+              ul {
+                width: 370px;
+                li {
+                  width: 300px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  line-height: 30px;
+                }
+              }
+              .more {
+                width: 100%;
+                a {
+                  float: right;
+                  width: 70px;
+                  height: 26px;
+                  background: #5a7aea;
+                  color: #fff;
+                  text-align: center;
+                  line-height: 26px;
+                  margin-right: 50px;
+                }
+              }
+            }
+          }
         }
       }
-      .about_Right{
+      .about_Right {
         margin-left: 20px;
         width: 300px;
+        border: 1px solid #e5e5e5;
+
+        ._rightTitle {
+          line-height: 40px;
+          background: #5a7aea;
+          color: #fff;
+          font-size: 16px;
+          padding: 0 14px;
+          a {
+            font-size: 16px;
+            color: #fff;
+            float: right;
+          }
+        }
+        ul {
+          height: 360px;
+          padding: 16px;
+          li {
+            line-height: 34px;
+            font-size: 14px;
+          }
+        }
       }
     }
   }

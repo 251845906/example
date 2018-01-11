@@ -25,7 +25,12 @@
 }
 ._nav ._nav_item li:hover {
   background: #5a7aea;
-  transition: background .5s;
+  transition: background .3s;
+}
+._nav ._nav_item li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 ._nav ._nav_item li:hover a {
   color: #fff;

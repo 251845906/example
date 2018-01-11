@@ -1,0 +1,80 @@
+.footer {
+  margin-top: 22px;
+}
+.footer ._article {
+  height: 80px;
+  background: #5a7aea;
+  color: #fff;
+}
+.footer ._article p {
+  line-height: 80px;
+  font-size: 14px;
+  text-align: center;
+}
+.footer ._article p a {
+  color: #fff;
+  margin: 0 30px;
+}
+.footer ._footer {
+  background: #1f2e4c;
+  height: 196px;
+}
+.footer ._footer .container {
+  padding: 22px 0;
+}
+.footer ._footer .title {
+  line-height: 32px;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 62px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer ._footer .xian {
+  background: #626262;
+  height: 132px;
+  float: left;
+  width: 1px;
+  margin-top: 16px;
+}
+.footer ._footer ._footerSubnav .title {
+  margin-bottom: 10px;
+}
+.footer ._footer ._footerSubnav a {
+  display: inline-block;
+  width: 100px;
+  color: #fff;
+  line-height: 26px;
+  font-size: 14px;
+}
+.footer ._footer ._footerContact {
+  padding: 0 38px;
+}
+.footer ._footer ._footerContact p {
+  color: #fff;
+  line-height: 26px;
+  font-size: 14px;
+}
+.footer ._footer ._footerContact .title {
+  margin-bottom: 10px;
+}
+.footer ._footer .copyright {
+  padding: 38px 38px 0 38px;
+}
+.footer ._footer .copyright p {
+  color: #fff;
+  line-height: 26px;
+  font-size: 14px;
+}
+.footer ._footer .wx {
+  padding-left: 80px;
+  padding-top: 12px;
+}
+.footer ._footer .wx p {
+  color: #fff;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+}

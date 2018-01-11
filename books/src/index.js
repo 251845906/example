@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import './reset.css';
 import './icon.css';
 import './commonality/top.css';
+import './commonality/Footer.css';
 // =============================
 import './page/css/index.css';   // 首页css
 //===============================

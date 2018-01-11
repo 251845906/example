@@ -293,15 +293,87 @@
   border: 1px solid #e0dfdf;
 }
 .Index .Index_container ._about .about_Left .ant-tabs {
-  width: 780px;
+  width: 778px;
 }
-.Index .Index_container ._about .about_Left .ant-tabs-tab {
-  width: 195px;
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-bar {
+  width: 778px;
+  height: 40px;
+  background: #f5f5f5;
+  margin-bottom: 0px;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-bar .ant-tabs-nav-container .ant-tabs-tab {
+  padding: 0;
+  margin: 0;
+  width: 194px;
   height: 40px;
   text-align: center;
-  margin: 0;
+  line-height: 40px;
+  color: #000;
+  transition: 0s;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-bar .ant-tabs-nav-container .ant-tabs-tab-active {
+  background: #5a7aea;
+  color: #fff;
+  transition: 0s;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-bar .ant-tabs-nav-container .ant-tabs-ink-bar {
+  background: none;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content {
+  width: 778px;
+  height: 360px;
+  padding: 18px;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content .ant-tabs-tabpane {
+  width: 778px;
+  height: 360px;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content .ant-tabs-tabpane ul {
+  width: 370px;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content .ant-tabs-tabpane ul li {
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 30px;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content .ant-tabs-tabpane .more {
+  width: 100%;
+}
+.Index .Index_container ._about .about_Left .ant-tabs .ant-tabs-content .ant-tabs-tabpane .more a {
+  float: right;
+  width: 70px;
+  height: 26px;
+  background: #5a7aea;
+  color: #fff;
+  text-align: center;
+  line-height: 26px;
+  margin-right: 50px;
 }
 .Index .Index_container ._about .about_Right {
   margin-left: 20px;
   width: 300px;
+  border: 1px solid #e5e5e5;
+}
+.Index .Index_container ._about .about_Right ._rightTitle {
+  line-height: 40px;
+  background: #5a7aea;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 14px;
+}
+.Index .Index_container ._about .about_Right ._rightTitle a {
+  font-size: 16px;
+  color: #fff;
+  float: right;
+}
+.Index .Index_container ._about .about_Right ul {
+  height: 360px;
+  padding: 16px;
+}
+.Index .Index_container ._about .about_Right ul li {
+  line-height: 34px;
+  font-size: 14px;
 }
