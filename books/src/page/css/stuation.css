@@ -1,0 +1,43 @@
+.Situation .Situation_banner {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.Situation .Situation_banner .ant-carousel .slick-slide {
+  height: 500px;
+}
+.Situation .Situation_banner .slick-slide ._banner_bj {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, 0);
+  /* Safari and Chrome */
+  width: 1920px;
+  height: 500px;
+}
+.Situation .Situation_banner .container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, 0);
+  /* Safari and Chrome */
+  top: 108px;
+}
+.Situation .Situation_banner .container a {
+  margin: 0 auto;
+  display: block;
+}
+.Situation .Situation_banner .container a:nth-child(1) {
+  width: 144px;
+  height: 145px;
+  margin-bottom: 25px;
+}
+.Situation .Situation_banner .container a:nth-child(2) {
+  width: 500px;
+  height: 79px;
+}

@@ -15,9 +15,6 @@ const Index = () => {
 class Banner extends Component{
     constructor(props){
         super(props);
-        this.state = {
-            BannerNum:0
-        }
     }
     render(){
         return(
@@ -28,10 +25,10 @@ class Banner extends Component{
                     effect="fade"
                     speed="500"
                 >
-                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
-                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
-                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
-                    <div><div className="_banner_bj"><img src={require('../images/index_banner_01.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner.png')} alt=""/></div></div>
+                    <div><div className="_banner_bj"><img src={require('../images/index_banner.png')} alt=""/></div></div>
                 </Carousel>
                 <div className="container">
                     <Link to="/"><img src={require('../images/logo.png')} alt="山西工商学院图书馆"/></Link>
