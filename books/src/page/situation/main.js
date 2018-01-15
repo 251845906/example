@@ -11,49 +11,45 @@ class Situation extends Component{
     constructor({ match },props){
         super(props);
         this.match = match;
+        this.state = {
+            BreadcrumbNav:'本馆介绍',
+            LinkToNav:`${this.match.url}/intro`,
+            rulesNav:[false,'xxxxxx'],
+            SituationMenu:'intro',
+        };
+        this.handLoalding = this.handLoalding.bind(this)
+    }
+    handLoalding(obj){
+        this.setState(obj);
     }
     render(){
-        const ArrPath = window.location.pathname.split('/');
-        const arrBreadcrumb = ['本馆介绍','馆舍风貌','规章制度','组织机构']
-        let SituationNav = '';
-        if(ArrPath[ArrPath.length-1] === ''){
-            ArrPath.splice(ArrPath.length-1,1);
-        }
-        console.log(ArrPath[ArrPath.length-1]);
-        switch (ArrPath[ArrPath.length-1]){
-            case 'situation':
-                 SituationNav = arrBreadcrumb[0];
-                break;
-            case 'intro':
-                 SituationNav = arrBreadcrumb[1];
-                break;
-            case 'style':
-                 SituationNav = arrBreadcrumb[2];
-                break;
-            case 'rules':
-                 SituationNav = arrBreadcrumb[3];
-                break;
-            case 'structure':
-                 SituationNav = arrBreadcrumb[4];
-                break;
-        }
         return (
                 <div className="box Situation">
                     <SituactionBanner />
-                    <Breadcrumb separator=">>" className="container">
-                        <Breadcrumb.Item>当前位置：首页</Breadcrumb.Item>
-                        <Breadcrumb.Item><Link to={`${this.match.url}/style`}>本馆概况</Link></Breadcrumb.Item>
-                        <Breadcrumb.Item>{SituationNav}</Breadcrumb.Item>
-                        {ArrPath.length < 4 || <Breadcrumb.Item> 555555</Breadcrumb.Item> }
-                    </Breadcrumb>
+                    <div className="_breadcrumb">
+                        <Breadcrumb separator=">>" className="container">
+                            <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={`${this.match.url}/`}>本馆概况</Link></Breadcrumb.Item>
+                            <Breadcrumb.Item><Link to={this.state.LinkToNav}>{this.state.BreadcrumbNav}</Link></Breadcrumb.Item>
+                            {this.state.rulesNav[0] && <Breadcrumb.Item> {this.state.rulesNav[1]}</Breadcrumb.Item> }
+                        </Breadcrumb>
+                    </div>
+                    <div className="SituationMenu container">
+                        <h3>概况  / <span>survey</span></h3>
+                        <ul>
+                            <li className={this.state.SituationMenu === 'intro' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to={`${this.match.url}/intro`}>本馆简介</Link> </li>
+                            <li className={this.state.SituationMenu === 'style' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to={`${this.match.url}/style`}>馆舍风貌</Link> </li>
+                            <li className={this.state.SituationMenu === 'structure' ? 'active':''}><span className="iconfont">&#xe66e; </span><Link to={`${this.match.url}/structure`}>组织机构</Link> </li>
+                            <li className={this.state.SituationMenu === 'rules' ? 'active':''}><span className="iconfont">&#xe631; </span><Link to={`${this.match.url}/rules`}>规章制度</Link> </li>
+                        </ul>
+                    </div>
                     <Switch>
-                        <Route exact path={`${this.match.url}/`} component={Intro}/>
-                        <Route path={`${this.match.url}/intro`} component={Intro}/>
-                        <Route path={`${this.match.url}/style`} component={Style}/>
-                        <Route path={`${this.match.url}/rules`} component={Rules}/>
-                        <Route path={`${this.match.url}/structure`} component={Structure}/>
+                        <Route exact path={`${this.match.url}/`} render={()=><Intro BreadcrumbNav={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/intro`} render={()=><Intro BreadcrumbNav={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/style`} render={()=><Style BreadcrumbNav={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/rules`} render={()=><Rules BreadcrumbNav={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/structure`} render={()=><Structure BreadcrumbNav={this.handLoalding}/>}/>
                     </Switch>
-
                 </div>
         )
     }
