@@ -174,3 +174,124 @@
   height: 218px;
   margin: 0 auto;
 }
+.Situation ._structure {
+  margin-top: 50px;
+}
+.Situation ._structure ._structureImg {
+  width: 1087px;
+  height: 793px;
+  margin: 0 auto;
+  background: url('../../images/Situation_structure.png') no-repeat center;
+}
+.Situation ._structure ._structureLeader h4 {
+  background: #f6f6f8;
+  line-height: 52px;
+  color: #ff6e01;
+  font-size: 24px;
+  text-indent: 22px;
+}
+.Situation ._structure ._structureLeader div {
+  padding: 20px;
+}
+.Situation ._structure ._structureLeader p {
+  line-height: 44px;
+  font-size: 15px;
+  text-indent: 14px;
+}
+.Situation ._structure ._structureCase h4 {
+  background: #f6f6f8;
+  line-height: 52px;
+  color: #ff6e01;
+  font-size: 24px;
+  text-indent: 22px;
+}
+.Situation ._structure ._structureCase ._table {
+  padding: 30px 30px 0 30px;
+}
+.Situation ._structure ._structureCase ._table table {
+  border-color: #d2d2d2;
+  margin-bottom: 30px;
+}
+.Situation ._structure ._structureCase ._table table th {
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+.Situation ._structure ._structureCase ._table table th:nth-child(1) {
+  width: 116px;
+}
+.Situation ._structure ._structureCase ._table table th:nth-child(2) {
+  width: 185px;
+}
+.Situation ._structure ._structureCase ._table table th:nth-child(3) {
+  width: 568px;
+}
+.Situation ._structure ._structureCase ._table table td {
+  padding: 15px;
+  font-size: 14px;
+}
+.Situation ._structure ._structureCase ._table table td:nth-child(4) {
+  line-height: 27px;
+}
+.Situation ._structure ._structureCase ._table table td:nth-child(4) span {
+  font-size: 28px;
+}
+.Situation ._rules {
+  padding: 50px 16px;
+}
+.Situation ._rules strong {
+  font-size: 14px;
+  line-height: 26px;
+}
+.Situation ._rules ul {
+  width: 1064px;
+  margin-top: 40px;
+}
+.Situation ._rules ul li {
+  float: left;
+  width: 522px;
+  margin-right: 16px;
+  padding-bottom: 14px;
+}
+.Situation ._rules ul li .ItemTitle {
+  background: #d6d6d6;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 14px;
+}
+.Situation ._rules ul li .ItemTitle h4 {
+  font-size: 22px;
+  display: inline-block;
+  width: 330px;
+  text-indent: 42px;
+  color: #fff;
+  background: #36509d;
+}
+.Situation ._rules ul li .ItemTitle span {
+  float: right;
+  margin-right: 16px;
+}
+.Situation ._rules ul li .ItemTitle span a {
+  color: #a9a9a9;
+}
+.Situation ._rules ul li .dian {
+  display: inline-block;
+  /*border-radius: 100px;*/
+  width: 3px;
+  height: 3px;
+  background: #555555;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-top: -2px;
+  opacity: .8;
+}
+.Situation ._rules ul li p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 30px;
+  text-indent: 4px;
+}
+.Situation ._rules ul li:nth-child(even) {
+  margin-right: 0;
+}

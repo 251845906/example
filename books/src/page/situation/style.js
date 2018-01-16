@@ -4,18 +4,17 @@ import { Carousel } from 'antd';
 
 
 class Style extends Component{
-    constructor({ match },props) {
+    constructor(props) {
         super(props);
-        this.match = match;
         this.state = {
             BreadcrumbNav: '馆舍风貌',
-            LinkToNav: 'situation/style',
-            rules: [false, ''],
+            LinkToNav: '/situation/style',
+            rulesNav: [false, ''],
             SituationMenu: 'style',
         }
     }
     componentDidMount(){
-        this.props.BreadcrumbNav(this.state);
+        this.props.Breadcrumb(this.state);
     }
     render(){
         return(

@@ -3,18 +3,17 @@ import React,{ Component } from 'react';
 
 
 class Intro extends Component{
-    constructor({ match },props) {
+    constructor(props) {
         super(props);
-        this.match = match;
         this.state = {
             BreadcrumbNav: '本馆介绍',
-            LinkToNav: 'situation/intro',
-            rules: [false, ''],
+            LinkToNav: '/situation/intro',
+            rulesNav: [false, ''],
             SituationMenu: 'intro',
         }
     }
     componentDidMount(){
-        this.props.BreadcrumbNav(this.state);
+        this.props.Breadcrumb(this.state);
     }
     render(){
         return(
