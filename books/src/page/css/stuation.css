@@ -239,6 +239,7 @@
 }
 .Situation ._rules {
   padding: 50px 16px;
+  height: 610px;
 }
 .Situation ._rules strong {
   font-size: 14px;
@@ -247,6 +248,7 @@
 .Situation ._rules ul {
   width: 1064px;
   margin-top: 40px;
+  height: 400px;
 }
 .Situation ._rules ul li {
   float: left;

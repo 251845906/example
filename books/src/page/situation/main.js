@@ -2,10 +2,12 @@ import React,{ Component } from 'react';
 import { BrowserRouter as Router , Route , Link , Switch } from 'react-router-dom';
 import { Breadcrumb } from 'antd';
 import SituactionBanner from './SituactionBanner';
-import Intro from './intro';
-import Style from './style';
-import Rules from './rules';
-import Structure from './structure';
+import Intro from './Intro';
+import Style from './Style';
+import Rules from './Rules';
+import Details from './RulesDetails';
+import Item from './RulesItem';
+import Structure from './Structure';
 
 class Situation extends Component{
     constructor({ match },props){
@@ -56,7 +58,9 @@ class Situation extends Component{
                         <Route exact path={`${this.match.url}/`} render={()=><Intro Breadcrumb={this.handLoalding}/>}/>
                         <Route path={`${this.match.url}/intro`} render={()=><Intro Breadcrumb={this.handLoalding}/>}/>
                         <Route path={`${this.match.url}/style`} render={()=><Style Breadcrumb={this.handLoalding}/>}/>
-                        <Route path={`${this.match.url}/rules`} render={()=><Rules Breadcrumb={this.handLoalding}/>}/>
+                        <Route exact path={`${this.match.url}/rules`} render={()=><Rules Breadcrumb={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/rules/item`} render={()=><Item Breadcrumb={this.handLoalding}/>}/>
+                        <Route path={`${this.match.url}/rules/details`} render={()=><Details Breadcrumb={this.handLoalding}/>}/>
                         <Route path={`${this.match.url}/structure`} render={()=><Structure Breadcrumb={this.handLoalding}/>}/>
                     </Switch>
                 </div>
