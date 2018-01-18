@@ -21,7 +21,7 @@ class Situation extends Component{
         this.state = {
             BreadcrumbNav:'本馆介绍',
             LinkToNav:'/situation/intro',
-            rulesNav:[false,''],
+            rulesNav:[false,{Link:'',container:''}],
             SituationMenu:'intro',
         };
         this.handLoalding = this.handLoalding.bind(this)
@@ -38,8 +38,8 @@ class Situation extends Component{
                             <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
                             <Breadcrumb.Item><Link to={`${this.match.url}/`}>本馆概况</Link></Breadcrumb.Item>
                             <Breadcrumb.Item><Link to={this.state.LinkToNav}>{this.state.BreadcrumbNav}</Link></Breadcrumb.Item>
-                            {this.state.rulesNav[0] && <Breadcrumb.Item> {this.state.rulesNav[1]}</Breadcrumb.Item>}
-                            {this.state.rulesNav.length> 2 ? <Breadcrumb.Item> {this.state.rulesNav[2]}</Breadcrumb.Item>:''}
+                            {this.state.rulesNav[0] && <Breadcrumb.Item>  <Link to={this.state.rulesNav[1].Link}>{this.state.rulesNav[1].container}</Link></Breadcrumb.Item>}
+                            {this.state.rulesNav.length> 2 ? <Breadcrumb.Item>  <Link to={this.state.rulesNav[2].Link}> {this.state.rulesNav[2].container}</Link></Breadcrumb.Item>:''}
                         </Breadcrumb>
                     </div>
                     { this.state.rulesNav[0] ||
