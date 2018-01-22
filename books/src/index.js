@@ -11,6 +11,8 @@ import './page/css/index.css';   // 首页css
 //===============================
 import './page/css/stuation.css'; // 本官概括css
 // =================================
+import './page/css/new.css'; // 本官概括css
+// =================================
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<Page />, document.getElementById('root'));

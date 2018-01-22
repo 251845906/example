@@ -1,5 +1,6 @@
 {
   "resourceRules": {
+    "title":"图书与电子资源管理制度",
     "resource5": {
       "title": "管际互借证使用规定",
       "Source": "某某来源",
@@ -130,6 +131,7 @@
 
 
   "equipmentRules": {
+    "title":"设施与设备使用管理制度",
     "equipment5": {
       "title":"电子阅览室管理制度（试行）",
       "Source": "某某来源",
@@ -261,6 +263,7 @@
 
 
   "handlungSnormen": {
+    "title":"馆员与读者行为管理规范",
     "handlung2": {
       "title":"网络行为规范（试行）",
       "Source": "某某来源",
@@ -330,6 +333,7 @@
 
 
   "safetyRules": {
+    "title":"公共安全教育与管理规定",
     "safety2": {
       "title":"读者消防安全须知",
       "Source": "某某来源",
