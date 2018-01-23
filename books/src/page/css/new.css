@@ -128,3 +128,72 @@
 .New .NewMenu ul li:last-child {
   margin-right: 0;
 }
+.New ._NewItem {
+  padding: 25px 15px;
+  min-height: 420px;
+}
+.New ._NewItem h4 {
+  color: #333333;
+  font-size: 24px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.New ._NewItem ._Item {
+  width: 1070px;
+}
+.New ._NewItem ._Item li {
+  float: left;
+  width: 524px;
+  height: 77px;
+  margin: 0 20px 40px 0;
+}
+.New ._NewItem ._Item li .pubDate {
+  cursor: pointer;
+  float: left;
+  width: 80px;
+  height: 74px;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  color: #666666;
+  margin-right: 20px;
+}
+.New ._NewItem ._Item li .pubDate strong {
+  font-size: 30px;
+}
+.New ._NewItem ._Item li .pubDate p {
+  font-size: 14px;
+}
+.New ._NewItem ._Item li .pubDate:hover {
+  background: #36509d;
+  transition: background .3s, color 0s;
+  border: 1px solid #36509d;
+  color: #fff;
+}
+.New ._NewItem ._Item li .pubDate:hover strong {
+  font-size: 30px;
+}
+.New ._NewItem ._Item li .pubDate:hover p {
+  font-size: 14px;
+}
+.New ._NewItem ._Item li .introduce {
+  float: left;
+  width: 420px;
+  height: 65px;
+}
+.New ._NewItem ._Item li .introduce h5 {
+  font-size: 15px;
+  line-height: 28px;
+  color: #333;
+  font-weight: bold;
+}
+.New ._NewItem ._Item li .introduce p {
+  font-size: 14px;
+  color: #666;
+  line-height: 20px;
+}
+.New ._NewItem ._Item li .introduce p span {
+  color: #ff6e01;
+}
+.New ._NewItem ._Item li:nth-child(even) {
+  margin-right: 0;
+}

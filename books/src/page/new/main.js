@@ -11,9 +11,10 @@ class New extends Component {
     constructor(props){
         super(props)
         this.state = {
-            Breadcrumb:[false,{link:"",container:""},{link:"",container:""}],
+            Breadcrumb:[false,{false,link:"",container:""},{false,link:"",container:""},{false,link:"",container:""}],
             LinkToNav:'/situation/intro',
-            SituationMenu:'intro',
+            SituationMenu:'inform',
+            detailOk:false,
         };
     }
     handLoalding(obj){
@@ -32,11 +33,11 @@ class New extends Component {
                         {this.state.Breadcrumb.length> 3 ? <Breadcrumb.Item>  <Link to={this.state.rulesNav[2].Link}> {this.state.rulesNav[2].container}</Link></Breadcrumb.Item>:''}
                     </Breadcrumb>
                 </div>
-                { this.state.Breadcrumb[0] ||
+                { this.state.detailOk[0] ||
                 <div className="NewMenu container">
                     <h3>新闻资讯  / <span>News</span></h3>
                     <ul>
-                        <li className={this.state.SituationMenu === 'intro' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/situation/intro">通知公告</Link> </li>
+                        <li className={this.state.SituationMenu === 'inform' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/situation/intro">通知公告</Link> </li>
                         <li className={this.state.SituationMenu === 'style' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/situation/style">动态新闻</Link> </li>
                     </ul>
                 </div>
