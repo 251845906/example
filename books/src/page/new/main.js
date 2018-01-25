@@ -9,18 +9,19 @@ import Detail from './detail'
 
 class New extends Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
-            Breadcrumb:[false,{false,link:"",container:""},{false,link:"",container:""},{false,link:"",container:""}],
-            LinkToNav:'/situation/intro',
+            Breadcrumb:[{link:"/new",container:"通知公告"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
             SituationMenu:'inform',
             detailOk:false,
         };
+        this.handLoading = this.handLoading.bind(this)
     }
-    handLoalding(obj){
-        this.setState(obj);
+    handLoading(obj){
+        this.setState(obj)
     }
     render(){
+
         return(
             <div className="box New">
                 <NavBanner />
@@ -28,25 +29,25 @@ class New extends Component {
                     <Breadcrumb separator=">>" className="container">
                         <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
                         <Breadcrumb.Item><Link to="/new">新闻资讯</Link></Breadcrumb.Item>
-                        <Breadcrumb.Item><Link to={this.state.LinkToNav}>{this.state.BreadcrumbNav}</Link></Breadcrumb.Item>
-                        {this.state.Breadcrumb[0] && <Breadcrumb.Item>  <Link to={this.state.rulesNav[1].Link}>{this.state.rulesNav[1].container}</Link></Breadcrumb.Item>}
-                        {this.state.Breadcrumb.length> 3 ? <Breadcrumb.Item>  <Link to={this.state.rulesNav[2].Link}> {this.state.rulesNav[2].container}</Link></Breadcrumb.Item>:''}
+                        <Breadcrumb.Item><Link to={this.state.Breadcrumb[0].link}>{this.state.Breadcrumb[0].container}</Link></Breadcrumb.Item>
+                        {this.state.Breadcrumb[1].start && <Breadcrumb.Item><Link to={this.state.Breadcrumb[1].link}>{this.state.Breadcrumb[1].container}</Link></Breadcrumb.Item>}
+                        {this.state.Breadcrumb[2].start && <Breadcrumb.Item>  <Link to={this.state.Breadcrumb[2].link}> {this.state.Breadcrumb[2].container}</Link></Breadcrumb.Item>}
                     </Breadcrumb>
                 </div>
-                { this.state.detailOk[0] ||
-                <div className="NewMenu container">
-                    <h3>新闻资讯  / <span>News</span></h3>
-                    <ul>
-                        <li className={this.state.SituationMenu === 'inform' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/situation/intro">通知公告</Link> </li>
-                        <li className={this.state.SituationMenu === 'style' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/situation/style">动态新闻</Link> </li>
-                    </ul>
-                </div>
+                { this.state.detailOk ||
+                    <div className="NewMenu container">
+                        <h3>新闻资讯  / <span>News</span></h3>
+                        <ul>
+                            <li className={this.state.SituationMenu === 'inform' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/new">通知公告</Link> </li>
+                            <li className={this.state.SituationMenu === 'trends' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/new/trends">动态新闻</Link> </li>
+                        </ul>
+                    </div>
                 }
                 <Switch>
-                    <Route exact path="/new" render={()=><Inform Breadcrumb={this.handLoalding}/>}/>
-                    <Route path="/new/inform" render={()=><Inform Breadcrumb={this.handLoalding}/>}/>
-                    <Route path="/new/trends" render={()=><Trends Breadcrumb={this.handLoalding}/>}/>
-                    <Route path="/new/detail" render={()=><Detail Breadcrumb={this.handLoalding}/>}/>
+                    <Route exact path="/new" render={()=><Inform Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/new/inform" render={()=><Inform Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/new/trends" render={()=><Trends Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/new/detail" render={()=><Detail Breadcrumb={this.handLoading}/>}/>
                 </Switch>
             </div>
         )

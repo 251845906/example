@@ -4,13 +4,28 @@ import { Pagination } from 'antd';
 
 
 class  Inform extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            Breadcrumb:[{link:"/new",container:"通知公告"},{start:false,link:"/new",container:"通知公告"},{start:false,link:"",container:""}],
+            SituationMenu:'inform',
+            detailOk:false,
+        };
+        this.loadingFun = this.loadingFun.bind(this);
+    }
+    componentDidMount(){
+        this.loadingFun(this.state)
+    }
+    loadingFun(i){
+        this.props.Breadcrumb(i)
+    }
     render(){
         function text(text) {
             // 文字介绍是否超过48个字符 超过截取前48个
             return text.length > 48 ? text.substring(0,48) : text
         }
         return(
-            <div className="_NewItem container clearfix">
+            <div className="_NewInform container clearfix">
                 <ul className="_Item clearfix">
                     <li className="clearfixr">
                         <div className="pubDate">

@@ -127,7 +127,7 @@
       }
     }
   }
-  ._NewItem{
+  ._NewInform{
     padding: 25px 15px;
     min-height: 420px;
     h4{
@@ -194,6 +194,114 @@
       }
       li:nth-child(even) {
         margin-right: 0
+      }
+    }
+  }
+  ._NewTrends{
+    .rotNew{
+      padding: 56px 20px;
+      .rotImg{
+        width: 400px;
+        height: 230px;
+        background: #000000;
+        margin-right:36px;
+      }
+      .rotArticle{
+        width: 620px;
+        h5{
+          font-weight: bold;
+          font-size: 18px;
+        }
+        span{
+          font-size: 12px;
+          color: #2c2c2c;
+          line-height: 30px;
+        }
+        p{
+          font-size: 14px;
+          color: #303030;
+          line-height: 24px;
+          padding: 10px 0 ;
+        }
+        .rotDetail{
+          display: block;
+          width: 80px;
+          height: 30px;
+          line-height: 30px;
+          background: #ff6e01;
+          text-align: center;
+          color: #fff;
+        }
+      }
+    }
+    ._TrendsList{
+      padding: 25px 15px;
+      min-height: 420px;
+      h4{
+        color: #333333;
+        font-size:24px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      ._Item {
+        width: 1070px;
+        li {
+
+          float: left;
+          width: 524px;
+          height: 77px;
+          margin: 0 20px 40px 0;
+          .pubDate {
+            cursor: pointer;
+            float: left;
+            width: 80px;
+            height: 74px;
+            border: 1px solid #d8d8d8;
+            text-align: center;
+            color: #666666;
+            margin-right: 20px;
+            strong {
+              font-size: 30px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .pubDate:hover {
+            background: #36509d;
+            transition: background .3s, color 0s;
+            border: 1px solid #36509d;
+            color: #fff;
+            strong {
+              font-size: 30px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .introduce {
+            float: left;
+            width: 420px;
+            height: 65px;
+            h5 {
+              font-size: 15px;
+              line-height: 28px;
+              color: #333;
+              font-weight: bold;
+            }
+            p {
+              font-size: 14px;
+              color: #666;
+              line-height: 20px;
+              span {
+                color: #ff6e01;
+              }
+            }
+          }
+        }
+        li:nth-child(even) {
+          margin-right: 0
+        }
       }
     }
   }

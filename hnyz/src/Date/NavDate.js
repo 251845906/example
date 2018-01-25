@@ -1,0 +1,37 @@
+const navDate = [
+    {
+        nav:"首页",
+        link:"/"
+    },
+    {
+        nav:"",
+        link:"",
+        childNav:[
+            {
+                nav:"",
+                link:""
+            },
+            {
+                nav:"",
+                link:""
+            },
+            {
+                nav:"",
+                link:""
+            },
+        ]
+    },
+    {
+        nav:"",
+        link:""
+    },
+    {
+        nav:"",
+        link:""
+    },
+    {
+        nav:"",
+        link:""
+    },
+];
+export default navDate
