@@ -302,3 +302,46 @@
 .New ._NewTrends ._TrendsList ._Item li:nth-child(even) {
   margin-right: 0;
 }
+.New ._newDetails {
+  padding: 30px 0px;
+}
+.New ._newDetails h4 {
+  color: #333333;
+  font-size: 24px;
+  line-height: 60px;
+}
+.New ._newDetails .newSource {
+  background: #f6f6f8;
+  line-height: 36px;
+  text-indent: 16px;
+  color: #333;
+}
+.New ._newDetails .newSource i {
+  padding: 0 10px;
+}
+.New ._newDetails .newSource a {
+  float: right;
+  margin-right: 16px;
+}
+.New ._newDetails .newTxT {
+  padding: 16px;
+}
+.New ._newDetails .newTxT p {
+  text-indent: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.New ._newDetails .figure {
+  text-align: center;
+}
+.New ._newDetails .figure img {
+  max-width: 100%;
+  padding: 10px 0;
+}
+.New ._newDetails .figure p {
+  color: #a8a8a8;
+  font-size: 12px;
+  line-height: 34px;
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Carousel , Select , Tabs  } from 'antd'
 const Option = Select.Option;
 const TabPane = Tabs.TabPane;
+const $ = require('jquery');
 const Index = () => {
     return(
         <div className='box Index'>
@@ -10,6 +11,7 @@ const Index = () => {
             <Container />
         </div>
     )
+
 
 };
 class Banner extends Component{
