@@ -2,17 +2,20 @@ import React,{ Component } from 'react';
 import { BrowserRouter as Router , Route , Link , Switch } from 'react-router-dom';
 import { Breadcrumb } from 'antd';
 import ServiceBanner from './ServiceBanner';
-// import Inform from './inform';
-// import Trends from './trendsNew';
-// import Detail from './detail'
-
+import Jyue from './jieyue/Main';
+import Lwen from './lunwen/Main';
+import Pxun from './peixun/Main';
+import Tguang from './tuiguang/Main';
+import Xke from './xueke/Main';
+import Znan from './zhinan/Main';
+import Vpn from './VPN/Main';
 
 class Service extends Component {
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/new",container:"通知公告"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
-            SituationMenu:'inform',
+            Breadcrumb:[{link:"/service",container:"入馆指南"},{start:true,link:"/service/Znan",container:"开馆时间"},{start:false,link:"",container:""}],
+            SituationMenu:'Znan',
             detailOk:false,
         };
         this.handLoading = this.handLoading.bind(this)
@@ -21,34 +24,43 @@ class Service extends Component {
         this.setState(obj)
     }
     render(){
-
+        console.log(this.state.SituationMenu)
         return(
-            <div className="box New">
+            <div className="box Service">
                 <ServiceBanner />
                 <div className="_breadcrumb">
                     <Breadcrumb separator=">>" className="container">
                         <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
-                        <Breadcrumb.Item><Link to="/new">新闻资讯</Link></Breadcrumb.Item>
+                        <Breadcrumb.Item><Link to="/new">本馆服务</Link></Breadcrumb.Item>
                         <Breadcrumb.Item><Link to={this.state.Breadcrumb[0].link}>{this.state.Breadcrumb[0].container}</Link></Breadcrumb.Item>
                         {this.state.Breadcrumb[1].start && <Breadcrumb.Item><Link to={this.state.Breadcrumb[1].link}>{this.state.Breadcrumb[1].container}</Link></Breadcrumb.Item>}
                         {this.state.Breadcrumb[2].start && <Breadcrumb.Item>  <Link to={this.state.Breadcrumb[2].link}> {this.state.Breadcrumb[2].container}</Link></Breadcrumb.Item>}
                     </Breadcrumb>
                 </div>
                 { this.state.detailOk ||
-                <div className="NewMenu container">
-                    <h3>新闻资讯  / <span>News</span></h3>
+                <div className="ServiceMenu container">
+                    <h3>服务  / <span>service</span></h3>
                     <ul>
-                        <li className={this.state.SituationMenu === 'inform' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/new">通知公告</Link> </li>
-                        <li className={this.state.SituationMenu === 'trends' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/new/trends">动态新闻</Link> </li>
+                        <li className={this.state.SituationMenu === 'Znan' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/service">入馆指南</Link> </li>
+                        <li className={this.state.SituationMenu === 'Jyue' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Jyue">借阅服务</Link> </li>
+                        <li className={this.state.SituationMenu === 'Pxun' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Pxun">讲座培训</Link> </li>
+                        <li className={this.state.SituationMenu === 'Xke' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Xke">学科服务</Link> </li>
+                        <li className={this.state.SituationMenu === 'Lwen' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Lwen">论文提交</Link> </li>
+                        <li className={this.state.SituationMenu === 'Tguang' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Tguang">阅读推广</Link> </li>
+                        <li className={this.state.SituationMenu === 'Vpn' ? 'active':''}><span className="iconfont">&#xe6cf; </span><Link to="/service/Vpn">VPN服务</Link> </li>
                     </ul>
                 </div>
                 }
-                {/*<Switch>*/}
-                    {/*<Route exact path="/new" render={()=><Inform Breadcrumb={this.handLoading}/>}/>*/}
-                    {/*<Route path="/new/inform" render={()=><Inform Breadcrumb={this.handLoading}/>}/>*/}
-                    {/*<Route path="/new/trends" render={()=><Trends Breadcrumb={this.handLoading}/>}/>*/}
-                    {/*<Route path="/new/detail" render={()=><Detail Breadcrumb={this.handLoading}/>}/>*/}
-                {/*</Switch>*/}
+                <Switch>
+                    <Route exact path="/service" render={()=><Znan Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Znan" render={()=><Znan Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Jyue" render={()=><Jyue Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Pxun" render={()=><Pxun Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Xke" render={()=><Xke Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Lwen" render={()=><Lwen Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Tguang" render={()=><Tguang Breadcrumb={this.handLoading}/>}/>
+                    <Route path="/service/Vpn" render={()=><Vpn Breadcrumb={this.handLoading}/>}/>
+                </Switch>
             </div>
         )
     }

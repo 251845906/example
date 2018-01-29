@@ -1,5 +1,5 @@
 * {word-wrap: break-word;}
-html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset {margin: 0;padding: 0;  }  ul, ol, dl {  list-style-type: none;  }
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,form,button,input,textarea,th,td,fieldset {margin: 0;padding: 0;  }  ul, ol, dl {  list-style-type: none;  }
 html,body {  *position: static;  }
 html{font-family: sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;  } address,caption,cite,code,dfn,em,th,var { font-style: normal; font-weight: 400;  } input,button,textarea,select,optgroup,option {font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;}
 input, button {overflow: visible;vertical-align: middle;outline: none;}
@@ -97,7 +97,16 @@ a:hover {color: #000000; text-decoration:none;}/*//鼠标移近：红色、下�
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #999;
 }
-
+pre, code {
+    display: block;
+    overflow: auto;
+    white-space:pre-wrap; /* css-3 */
+    white-space:-moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space:-pre-wrap; /* Opera 4-6 */
+    white-space:-o-pre-wrap; /* Opera 7 */
+    word-wrap:break-word; /* Internet Explorer 5.5+ */
+    white-space: pre-wrap; /* Firefox */
+}
 
 
 

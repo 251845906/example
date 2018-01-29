@@ -2,10 +2,10 @@ import React,{ Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'antd';
 
-class NavBanner extends Component{
+class ServiceBanner extends Component{
     render(){
         return(
-            <div className="New_banner">
+            <div className="Service_banner">
                 <Carousel
                     autoplay={true}
                     autoplaySpeed={3000}
@@ -26,4 +26,4 @@ class NavBanner extends Component{
         )
     }
 }
-export default NavBanner
+export default ServiceBanner
