@@ -1,6 +1,7 @@
 import React,{ Component } from 'react';
 import action from '../redux/action';
 import { connect } from 'react-redux';
+
 // import { BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
 
 import Ajax from './ajax';

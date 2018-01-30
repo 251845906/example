@@ -2,12 +2,12 @@ import React,{ Component } from 'react';
 import { BrowserRouter as Router , Route , Link , Switch } from 'react-router-dom';
 import { Breadcrumb } from 'antd';
 import SituactionBanner from './SituactionBanner';
-import Intro from './Intro';
-import Style from './Style';
-import Rules from './Rules';
+import Intro from './intro';
+import Style from './style';
+import Rules from './rules';
 import Details from './RulesDetails';
 import Item from './RulesItem';
-import Structure from './Structure';
+import Structure from './structure';
 
 class Situation extends Component{
     constructor(props){

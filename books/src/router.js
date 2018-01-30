@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import React,{Component} from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -11,11 +12,12 @@ import Resource from './page/resource/main';
 import Exchange from './page/exchange/main';
 import configureStore from './redux/store';
 import Footer from './commonality/Footer'
+
 const store = configureStore(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 class Page extends Component{
     render(){
         return(
-            <Provider store={store}>
+            <Provider >
                 <Router>
                     <div>
                         <Top />

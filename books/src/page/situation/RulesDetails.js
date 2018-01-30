@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Ajax from '../../commonality/ajax';
 import { Divider } from 'antd';
+
 import { Link } from 'react-router-dom';
 class Details extends Component{
     constructor(props) {

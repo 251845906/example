@@ -1,8 +1,6 @@
 import React,{ Component } from 'react';
 import { Carousel } from 'antd';
 
-
-
 class Style extends Component{
     constructor(props) {
         super(props);
