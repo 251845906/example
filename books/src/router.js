@@ -17,7 +17,7 @@ const store = configureStore(window.__REDUX_DEVTOOLS_EXTENSION__ && window.__RED
 class Page extends Component{
     render(){
         return(
-            <Provider >
+            <Provider store={store}>
                 <Router>
                     <div>
                         <Top />

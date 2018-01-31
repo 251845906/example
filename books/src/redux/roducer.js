@@ -4,7 +4,7 @@ const initialState = {
 const roducer = ( state = initialState , action) => {
     switch (action.type){
         case 'ID_LOGIN' :
-            return(
+            return (
                 Object.assign({},state,{
                     login:action.text
                 })
