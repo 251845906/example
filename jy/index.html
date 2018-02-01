@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="description" content="介绍词" />
+    <meta name="keywords" content="检索词">
+    <title>Title</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+    <base href="images/" />
+    <script type="text/javascript">
+        if(/MSIE 8.0|MSIE 7.0/i.test(navigator.userAgent)){
+            var star = confirm("您当前浏览器版本过低无法访问本网站，是否跳转至浏览器下载页面")
+            if(star){
+                window.location.href = "http://chrome.360.cn/"
+            }else{
+                window.opener=null;
+                window.open('','_self');
+                window.close();
+            }
+        }
+
+    </script>
+</head>
+<body >
+<div class="header box">
+    <div class="container">
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <span class="clientSide"><i class="iconfont">&#xe616;</i>客户端</span>
+        <span class="ipt" >
+            <input type="text" id="ipt" value=""><input type="button" value="&#xe7d4;" class="iconfont">
+            <script type="text/javascript">placeholder({defaultValue:'搜索感兴趣的课程',Dom:$('#ipt')})</script>
+        </span>
+        <span class="logModule">
+            <a href="javascript:void(0);" class="login">登录</a>|
+            <a href="javascript:void(0);" class="register">注册</a>
+        </span>
+    </div>
+</div>
+<div class="nav  container">
+    <div class="nav_list">
+        <a href="">全部课程</a>
+        <a href="">课件</a>
+        <a href="">互动</a>
+        <a href="">答疑</a>
+        <a href="">移动</a>
+        <a href="">同桌</a>
+        <a href="">VIP</a>
+    </div>
+    <span class="phone"><i class="iconfont">&#xe60d;</i>400-123-4567</span>
+</div>
+<div class="banner box">
+    <div class="container">
+        <ul class="menu">
+            <li class="active"><i class="dian"></i><a href="javascript:void(0);">英语</a><span>></span</li>
+            <li><i class="dian"></i><a href="javascript:void(0)">日语</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">韩语</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">小语种</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">出国留学</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">财会金融</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">职场兴趣</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">中小·幼儿教育</a><span>></span></li>
+            <li><i class="dian"></i><a href="javascript:void(0)">考研</a><span>></span></li>
+        </ul>
+        <ul class="menuDetails">
+            <li class="active">
+                <div class="translucence"></div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>deyi</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>3</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>4</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>55</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>666</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>777</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>888</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+            <li>
+                <div class="translucence"></div>
+                <h4>999</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+                <h4>法语</h4>
+                <div>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                    <a href="">考试</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class=" recommend">
+    <div class="container">
+        <h4>推荐课程</h4>
+        <div class="recommend_box clearfix">
+            <div class="prev iconfont fl">&#xe600;</div>
+            <div class="recommend_Item fl">
+                <div class="Item">
+                    <div class="Item_Img"><img src="recommend01.png" alt=""></div>
+                    <div class="Item_txt">
+                        <h5>汽车维修</h5>
+                        <p><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                        <p><span><i class="iconfont">&#xe6c6;</i><em>555</em></span><span><i class="iconfont">&#xe647;</i><em>125</em></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="next iconfont fl">&#xe601;</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

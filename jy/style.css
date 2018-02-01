@@ -1,0 +1,192 @@
+.header {
+  height: 50px;
+  background: #2e323e;
+}
+.header .logo {
+  line-height: 50px;
+  margin-right: 580px;
+}
+.header .clientSide {
+  line-height: 50px;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.header .clientSide .iconfont {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.header .ipt {
+  margin-right: 110px;
+}
+.header .ipt input[type="text"] {
+  width: 196px;
+  height: 30px;
+  border: none;
+  text-indent: 16px;
+  line-height: 30px;
+}
+.header .ipt input[type="button"] {
+  width: 36px;
+  height: 30px;
+  background: #43bc60;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+.header .logModule {
+  color: #fff;
+}
+.header .logModule a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.nav {
+  line-height: 55px;
+}
+.nav .nav_list {
+  margin-right: 645px;
+  display: inline-block;
+}
+.nav .nav_list a {
+  font-size: 16px;
+  margin-right: 36px;
+}
+.nav .phone {
+  font-size: 14px;
+}
+.nav .phone i {
+  color: #1ab270;
+  font-size: 20px;
+  margin-right: 4px;
+}
+.banner {
+  height: 400px;
+  background: url('images/banner.png') no-repeat center;
+}
+.banner .container {
+  position: relative;
+  height: 100%;
+}
+.banner .container .menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3a0608;
+  width: 200px;
+  height: 400px;
+}
+.banner .container .menu li {
+  width: 168px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
+}
+.banner .container .menu li .dian {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  vertical-align: middle;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+.banner .container .menu li a {
+  color: #fff;
+  font-size: 16px;
+  display: inline-block;
+  width: 142px;
+}
+.banner .container .menu li span {
+  color: #fff;
+  font-size: 16px;
+  line-height: 42px;
+}
+.banner .container .menu li.active {
+  background: #896a6b;
+}
+.banner .container .menuDetails {
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+.banner .container .menuDetails li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 400px;
+  overflow: hidden;
+}
+.banner .container .menuDetails li .translucence {
+  background: #fff;
+  opacity: .8;
+  width: 280px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.banner .container .menuDetails li h4 {
+  font-size: 20px;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  text-indent: 22px;
+}
+.banner .container .menuDetails li div {
+  position: relative;
+  z-index: 1;
+}
+.banner .container .menuDetails li div a {
+  display: inline-block;
+  width: 84px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+.banner .container .menuDetails li div a:hover {
+  color: #cb161b;
+}
+.banner .container .menuDetails li.active {
+  width: 280px;
+}
+.recommend {
+  height: 440px;
+  padding: 42px 0;
+  background: #ededed;
+}
+.recommend h4 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.recommend .recommend_box {
+  height: 270px;
+  width: 100%;
+}
+.recommend .recommend_box .iconfont {
+  width: 30px;
+  line-height: 270px;
+  border: 1px solid red;
+}
+.recommend .recommend_box .recommend_Item {
+  border: 1px solid red;
+  width: 1230px;
+  height: 270px;
+}
+.recommend .recommend_box .recommend_Item .Item .Item_Img {
+  width: 235px;
+  height: 135px;
+  overflow: hidden;
+}
+.recommend .recommend_box .recommend_Item .Item .Item_txt {
+  padding: 10px;
+}
+.recommend .recommend_box .recommend_Item .Item .Item_txt h5 {
+  font-size: 16px;
+}
