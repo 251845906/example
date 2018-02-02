@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="font.css">
     <script type="text/javascript" src="jq.js"></script>
     <script type="text/javascript" src="controller.js"></script>
-    <base href="images/" />
     <script type="text/javascript">
         if(/MSIE 8.0|MSIE 7.0/i.test(navigator.userAgent)){
             var star = confirm("您当前浏览器版本过低无法访问本网站，是否跳转至浏览器下载页面")
@@ -30,7 +29,7 @@
 <body >
 <div class="header box">
     <div class="container">
-        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
         <span class="clientSide"><i class="iconfont">&#xe616;</i>客户端</span>
         <span class="ipt" >
             <input type="text" id="ipt" value=""><input type="button" value="&#xe7d4;" class="iconfont">
@@ -57,7 +56,7 @@
 <div class="banner box">
     <div class="container">
         <ul class="menu">
-            <li class="active"><i class="dian"></i><a href="javascript:void(0);">英语</a><span>></span</li>
+            <li><i class="dian"></i><a href="javascript:void(0);">英语</a><span>></span</li>
             <li><i class="dian"></i><a href="javascript:void(0)">日语</a><span>></span></li>
             <li><i class="dian"></i><a href="javascript:void(0)">韩语</a><span>></span></li>
             <li><i class="dian"></i><a href="javascript:void(0)">小语种</a><span>></span></li>
@@ -68,7 +67,7 @@
             <li><i class="dian"></i><a href="javascript:void(0)">考研</a><span>></span></li>
         </ul>
         <ul class="menuDetails">
-            <li class="active">
+            <li>
                 <div class="translucence"></div>
                 <h4>法语</h4>
                 <div>
@@ -341,22 +340,363 @@
         </ul>
     </div>
 </div>
-<div class=" recommend">
+<div class="recommend box">
     <div class="container">
         <h4>推荐课程</h4>
-        <div class="recommend_box clearfix">
-            <div class="prev iconfont fl">&#xe600;</div>
-            <div class="recommend_Item fl">
-                <div class="Item">
-                    <div class="Item_Img"><img src="recommend01.png" alt=""></div>
-                    <div class="Item_txt">
-                        <h5>汽车维修</h5>
-                        <p><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
-                        <p><span><i class="iconfont">&#xe6c6;</i><em>555</em></span><span><i class="iconfont">&#xe647;</i><em>125</em></span></p>
+        <div class="recommend_box">
+            <div class="prev iconfont ">&#xe600;</div>
+            <div class="recommend_Item">
+                <div class="swiper_box clearfix">
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend01.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend02.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend03.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend04.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend05.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend01.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend02.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend03.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend04.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Item">
+                        <div class="Item_Img"><img src="images/recommend05.png" alt=""></div>
+                        <div class="Item_txt">
+                            <h5>汽车维修</h5>
+                            <p class="text"><span class="recommend_txt">对出现故障的汽车通过技术手段排查，并采取</span><em>......</em></p>
+                            <p class="look">
+                                <span><i class="iconfont">&#xe6c6;</i><em>555</em></span>
+                                <span><i class="iconfont">&#xe647;</i><em>125</em></span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="next iconfont fl">&#xe601;</div>
+            <div class="next iconfont">&#xe601;</div>
+        </div>
+    </div>
+</div>
+<div class="focusCurriculum box">
+    <div class="container clearfix">
+        <div class="left fl">
+            <img src="images/focus.png" alt="">
+            <p>一起学习<i></i>一起成长</p>
+        </div>
+        <div class="right fl">
+            <div class="prev iconfont ">&#xe600;</div>
+            <div class="swiper_box">
+                <div class="swiper clearfix">
+                    <div class="Item">
+                        <a href="#" class="Item_Img"><img src="images/focusItem01.png" alt=""></a>
+                        <h5>易语言编程思想</h5>
+                        <p class="text">英文编程软件只能使用英文输入程序代码并且需要<span>....</span></p>
+                        <p class="Lookpeople"><span>800</span>人已报名</p>
+                    </div>
+                    <div class="Item">
+                        <a href="#" class="Item_Img"><img src="images/focusItem02.png" alt=""></a>
+                        <h5>易语言编程思想</h5>
+                        <p class="text"><span>英文编程软件只能使用英文输入程序代码并且需要</span>....</p>
+                        <p class="Lookpeople"><span>800</span>人已报名</p>
+                    </div>
+                    <div class="Item">
+                        <a href="#" class="Item_Img"><img src="images/focusItem01.png" alt=""></a>
+                        <h5>易语言编程思想</h5>
+                        <p class="text">英文编程软件只能使用英文输入程序代码并且需要<span>....</span></p>
+                        <p class="Lookpeople"><span>800</span>人已报名</p>
+                    </div>
+                    <div class="Item">
+                        <a href="#" class="Item_Img"><img src="images/focusItem02.png" alt=""></a>
+                        <h5>易语言编程思想</h5>
+                        <p class="text"><span>英文编程软件只能使用英文输入程序代码并且需要</span>....</p>
+                        <p class="Lookpeople"><span>800</span>人已报名</p>
+                    </div>
+                </div>
+            </div>
+            <div class="next iconfont">&#xe601;</div>
+        </div>
+    </div>
+</div>
+<div class="course box">
+    <div class="newCourse  container">
+        <div class="title">
+            <h5>最新课程</h5>
+            <a href="javascript:;">商业</a>
+            <a href="javascript:;">商贸</a>
+            <a href="javascript:;">保险</a>
+            <a href="javascript:;">贸易</a>
+            <a href="javascript:;">工商</a>
+            <a href="javascript:;">商务英语</a>
+            <a href="javascript:;" class="move">查看全部>></a>
+        </div>
+        <div class="left fl">
+            <div><img src="images/newCourseLeft.png" alt=""></div>
+            <div class="txt"><p>针对不同学历、潜力、资质、度身打造属于你的那门课程</p></div>
+        </div>
+        <div class="centre fl">
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x1.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x2.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x3.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x4.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x5.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/x6.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+        </div>
+        <div class="right fl">
+            <h6>精彩讨论</h6>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+        </div>
+    </div>
+    <div class="hotCourse  container">
+        <div class="title">
+            <h5>最新课程</h5>
+            <a href="javascript:;">商业</a>
+            <a href="javascript:;">商贸</a>
+            <a href="javascript:;">保险</a>
+            <a href="javascript:;">贸易</a>
+            <a href="javascript:;">工商</a>
+            <a href="javascript:;">商务英语</a>
+            <a href="javascript:;" class="move">查看全部>></a>
+        </div>
+        <div class="left fl">
+            <div><img src="images/h1.png" alt=""></div>
+            <div class="leftTxt">
+                <h6>商业</h6>
+                <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+            </div>
+        </div>
+        <div class="centre fl">
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h2.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h3.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h4.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h5.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h6.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+            <div class="newCourseItem">
+                <div class="newItemImg"><img src="images/h7.png" alt=""></div>
+                <div class="newItemTxt">
+                    <h6>商业</h6>
+                    <span class="collect"><i class="iconfont">&#xe615;</i>55</span>
+                    <span class="peopleNum"><i class="iconfont">&#xe6c6;</i>236</span>
+                    <span class="praise"><i class="iconfont">&#xe647;</i>15</span>
+                </div>
+            </div>
+        </div>
+        <div class="right fl">
+            <h6>热门排行</h6>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
+            <a class="article">
+                <p>JS都有哪几种类型？</p>
+                <p>计算机技术</p>
+            </a>
         </div>
     </div>
 </div>
