@@ -184,6 +184,7 @@
 }
 .recommend .recommend_box .prev {
   left: 0;
+  display: none;
 }
 .recommend .recommend_box .next {
   right: 0;
@@ -405,12 +406,17 @@
   height: 410px;
   background: #fff;
   margin-right: 30px;
+  transition: .3s;
 }
 .course .newCourse .left .txt {
   padding: 10px ;
 }
 .course .newCourse .left p {
   line-height: 24px;
+}
+.course .newCourse .left:hover {
+  box-shadow: 0 0 15px #333;
+  transition: .3s;
 }
 .course .newCourse .centre {
   width: 790px;
@@ -460,6 +466,10 @@
 }
 .course .newCourse .centre .newCourseItem .newItemTxt .praise {
   margin: 0;
+}
+.course .newCourse .centre .newCourseItem:hover {
+  box-shadow: 0 0 15px #333;
+  transition: .3s;
 }
 .course .newCourse .right {
   width: 204px;
@@ -514,18 +524,53 @@
   height: 410px;
   background: #fff;
   margin-right: 18px;
+  transition: .3s;
 }
-.course .hotCourse .left .txt {
-  padding: 10px ;
+.course .hotCourse .left .leftImg {
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
 }
-.course .hotCourse .left p {
-  line-height: 24px;
+.course .hotCourse .left .leftImg img {
+  width: 100%;
+}
+.course .hotCourse .left .leftTxt {
+  padding: 10px;
+}
+.course .hotCourse .left .leftTxt h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  margin-bottom: 5px;
+  text-indent: 4px;
+  text-align: center;
+}
+.course .hotCourse .left .leftTxt span {
+  color: #777;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.course .hotCourse .left .leftTxt i {
+  color: #43bc60;
+  font-size: 16px;
+  vertical-align: top;
+  margin-right: 4px;
+}
+.course .hotCourse .left .leftTxt .peopleNum {
+  margin-right: 84px;
+}
+.course .hotCourse .left .leftTxt .praise {
+  margin: 0;
+}
+.course .hotCourse .left:hover {
+  box-shadow: 0 0 15px #333;
+  transition: .3s;
 }
 .course .hotCourse .centre {
   width: 768px;
   height: 416px;
 }
-.course .hotCourse .centre .newCourseItem {
+.course .hotCourse .centre .hotCourseItem {
   background: #fff;
   float: left;
   overflow: hidden;
@@ -535,40 +580,44 @@
   height: 200px;
   transition: .5s;
 }
-.course .hotCourse .centre .newCourseItem .newItemImg {
+.course .hotCourse .centre .hotCourseItem .hotItemImg {
   width: 235px;
   height: 135px;
   overflow: hidden;
 }
-.course .hotCourse .centre .newCourseItem .newItemImg img {
+.course .hotCourse .centre .hotCourseItem .hotItemImg img {
   transition: .5s;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt {
   padding: 10px;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt h6 {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt h6 {
   font-size: 16px;
   font-weight: normal;
   line-height: 26px;
   margin-bottom: 5px;
   text-indent: 4px;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt span {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt span {
   color: #777;
   vertical-align: middle;
   margin-right: 10px;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt i {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt i {
   color: #43bc60;
   font-size: 16px;
   vertical-align: top;
   margin-right: 4px;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt .peopleNum {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt .peopleNum {
   margin-right: 84px;
 }
-.course .hotCourse .centre .newCourseItem .newItemTxt .praise {
+.course .hotCourse .centre .hotCourseItem .hotItemTxt .praise {
   margin: 0;
+}
+.course .hotCourse .centre .hotCourseItem:hover {
+  box-shadow: 0 0 15px #333;
+  transition: .3s;
 }
 .course .hotCourse .right {
   width: 204px;
@@ -597,4 +646,22 @@
 .course .hotCourse .right .article p:nth-child(2) {
   font-size: 12px;
   color: #888;
+}
+.footer {
+  background: #333;
+  height: 216px;
+}
+.footer .Link {
+  width: 360px;
+  margin: 0 auto;
+  height: 170px;
+}
+.footer .Link a {
+  display: inline-block;
+  margin: 85px 32px 0 32px;
+  color: #6b6b6b;
+}
+.footer p {
+  text-align: center;
+  color: #6b6b6b;
 }

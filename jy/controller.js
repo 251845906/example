@@ -15,13 +15,13 @@ $(function () {
 
     $('.recommend .next').click(function(){
         var $this = $(this);
-        swiper({Dom:$('.swiper_box'),left:'-1262px',callback:function(){
+        swiper({Dom:$('.recommend .swiper_box'),left:'-1262px',callback:function(){
             $($this).fadeOut(200).siblings('.prev').css({visibility:'visible'}).animate({opacity:1},500)
         }})
     });
     $('.recommend .prev').click(function(){
         var $this = $(this);
-        swiper({Dom:$('.swiper_box'),left:'20px',callback:function(){
+        swiper({Dom:$('.recommend .swiper_box'),left:'20px',callback:function(){
             $($this).stop(true,true).animate({opacity:0},200,function(){
                 $(this).css({visibility:'hidden'})
             }).siblings('.next').fadeIn(200);
