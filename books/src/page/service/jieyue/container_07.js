@@ -2,21 +2,51 @@ import React,{ Component } from 'react';
 
 export default () => {
     return(
-        <div className="layout">
-            <h5 className="title">馆藏分布</h5>
-            <p>入馆须知</p>
-            <p>
-                一、读者使用本人一卡通刷卡进入图书馆。<br/>
-                二、读者取阅图书期刊时，请于阅览完毕放回原处，不得乱放，不准带出室外。<br/>
-                三、保持图书馆公共卫生，禁止携带各种饮料及食品入馆。<br/>
-                四、爱护书刊、爱护设备，不准在书刊及桌椅上乱划，禁止撕页、折页等，未经许可，禁止在馆内张贴或散发广告及其他宣传品。<br/>
-                五、保持图书馆内安静，手机或电脑等设备调至静音。禁止在馆内喧哗、朗读或大声接打手机，接打手机请至图书馆的有声空间中。<br/>
-                六、图书馆是重点防火单位，严禁在馆内任何地方吸烟、用火。<br/>
-                七、遵守并维护馆内秩序，不用物品抢占阅览座位，不得随意挪动阅览桌椅。<br/>
-                八、自觉遵守本馆的各项规章制度，支持工作人员按章办事。<br/>
-                九、对违反上述规定的读者，任何人都有权批评、制止其不当行为。对情节严重者，图书馆有追究当事人责任的权利。<br/>
-                十、本规定由图书馆负责解释。<br/>
-            </p>
+        <div>
+            <h5 className="title">名人藏书馆</h5>
+            <div className="Cshu">
+                <div className="Cshu_List">
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                </div>
+                <div className="Cshu_List">
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                </div>
+                <div className="Cshu_List">
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                    <span><a href="#">XX藏书馆</a></span>
+                </div>
+                <div className="Cshu_Container">
+                    <div className="Cshu_title">
+                        <h6>XX藏书馆简介</h6>
+                    </div>
+                    <p>山西工商学院图书馆创建于2003年，建筑面积9200平方米。馆藏文献中以社会科学门类图书为主，形成了以收藏工商管理类专业学科文献为重点，　适当入藏相关学科理论著作和一般性图书的馆藏文献信息资源体系。经过九年的基本建设，围绕学院各学科专业的发展，专业图书报刊占馆藏量的80%，其它类图书占20%。截止2012年底馆藏纸质文献共计74.62万册；2013年订购报纸48种，期刊311种；同时增加了 “万方数据知识服务平台系统”，该系统收录了中国重要期刊全文6700余种，自80年代以来收录我国各学科领域的学位论文，目前已建成国内数量最多、专业涵盖面最广、收集单位最为权威的学位论文全文数据库。</p>
+                    <button className="Cshu_Link"> >>  进入该馆  {'<<'} </button>
+                </div>
+            </div>
+
         </div>
     )
 }
