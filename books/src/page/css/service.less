@@ -187,78 +187,7 @@
       }
     }
   }
-  .ServiceMenu{
-    margin-bottom:60px;
-    h3{
-      font-size: 30px;
-      color: #ff6e01;
-      font-style: italic;
-      text-align: center;
-      line-height: 80px;
-      span{
-        font-weight: bold;
-        color: #d8d8d8;
-      }
-    }
-    ul{
-      width: 1060px;
-      margin: 0 auto;
-      li{
-        display: inline-block;
-        width: 124px;
-        height: 38px;
-        margin-right: 30px;
-        border:1px solid #d8d8d8;
-        span{
-          display: inline-block;
-          width: 34px;
-          height: 100%;
-          text-align: center;
-          background: #e5e5e5;
-          color: #c4c4c4;
-          font-size: 20px;
-        }
-        a{
-          display: inline-block;
-          height: 100%;
-          width: 86px;
-          vertical-align: top;
-          line-height: 38px;
-          text-indent: 16px;
-          font-size: 14px;
-        }
-      }
-      li.active{
-        display: inline-block;
-        width: 124px;
-        height: 38px;
-        margin-right: 30px;
-        border:1px solid #ff6e01;
-        span{
-          display: inline-block;
-          width: 34px;
-          height: 100%;
-          text-align: center;
-          background: #ff6e01;
-          color: #fff;
-          font-size: 20px;
-        }
-        a{
-          display: inline-block;
-          height: 100%;
-          width: 86px;
-          vertical-align: top;
-          line-height: 38px;
-          text-indent: 16px;
-          font-size: 14px;
-          color: #ff6e01;
-        }
-      }
-      li:last-child{
-        margin-right: 0;
-      }
-    }
-  }
+  //借阅部分
   ._ServiceJyue{
     padding:0 16px 16px 0;
     .JyueContainer{
@@ -279,6 +208,7 @@
         margin:0 10px;
       }
     }
+    //container 07 中的内容
     .Cshu{
       .Cshu_List{
         border-right: 1px solid #888;
@@ -331,5 +261,78 @@
         }
       }
     }
+  }
+  ._ServicePxun{
+    padding:0 16px 16px 0;
+    .PxunContainer{
+      width: 850px;
+      .title{
+        line-height: 46px;
+        background: #f5f5f5;
+        font-size: 20px;
+        text-indent: 20px;
+        margin-bottom: 10px;
+      }
+      ._Item {
+        width: 100%;
+        li {
+          float: left;
+          width: 410px;
+          height: 77px;
+          margin: 0 20px 40px 0;
+          .pubDate {
+            cursor: pointer;
+            float: left;
+            width: 80px;
+            height: 74px;
+            border: 1px solid #d8d8d8;
+            text-align: center;
+            color: #666666;
+            margin-right: 20px;
+            strong {
+              font-size: 30px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .pubDate:hover {
+            background: #36509d;
+            transition: background .3s, color 0s;
+            border: 1px solid #36509d;
+            color: #fff;
+            strong {
+              font-size: 30px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .introduce {
+            float: left;
+            width: 310px;
+            height: 65px;
+            h5 {
+              font-size: 15px;
+              line-height: 28px;
+              color: #333;
+              font-weight: bold;
+            }
+            p {
+              font-size: 14px;
+              color: #666;
+              line-height: 20px;
+              span {
+                color: #ff6e01;
+              }
+            }
+          }
+        }
+        li:nth-child(even) {
+          margin-right: 0
+        }
+      }
+    }
+
   }
 }

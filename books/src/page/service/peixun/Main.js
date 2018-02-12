@@ -1,8 +1,9 @@
 import React,{ Component } from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
-// import Timer from './timer'
-// import Layout from './layout'
-// import Know from './know'
+import C1 from './container_01'
+import C2 from './container_02'
+import C3 from './container_03'
+import C4 from './container_04'
 
 
 class  Inform extends Component{
@@ -23,22 +24,22 @@ class  Inform extends Component{
     }
     render(){
         return(
-            <div className="_ServiceZnan container clearfix">
-                <div className="Znan clearfix">
+            <div className="_ServicePxun container clearfix">
+                <div className="Pxun clearfix">
                     <ul className="_Menu fl">
-                        <li><Link to="/service/Pxun/">新生培训</Link></li>
-                        <li><Link to="/service/Pxun/">资源篇</Link></li>
-                        <li><Link to="/service/Pxun/">应用篇</Link></li>
-                        <li><Link to="/service/Pxun/">专场讲座</Link></li>
+                        <li><Link to="/service/Pxun/C1">新生培训</Link></li>
+                        <li><Link to="/service/Pxun/C2">资源篇</Link></li>
+                        <li><Link to="/service/Pxun/C3">应用篇</Link></li>
+                        <li><Link to="/service/Pxun/C4">专场讲座</Link></li>
                     </ul>
-                    <div className="ZnanContainer fl">
-                        {/*<Switch>*/}
-                            {/*<Route exact path="/service/Pxun" component={Timer}/>*/}
-                            {/*<Route path="/service/Pxun" component={Timer}/>*/}
-                            {/*<Route path="/service/Pxun" component={Timer}/>*/}
-                            {/*<Route path="/service/Pxun" component={Layout}/>*/}
-                            {/*<Route path="/service/Pxun" component={Know}/>*/}
-                        {/*</Switch>*/}
+                    <div className="PxunContainer fl">
+                        <Switch>
+                            <Route exact path="/service/Pxun" component={C1}/>
+                            <Route path="/service/Pxun/C1" component={C1}/>
+                            <Route path="/service/Pxun/C2" component={C2}/>
+                            <Route path="/service/Pxun/C3" component={C3}/>
+                            <Route path="/service/Pxun/C4" component={C4}/>
+                        </Switch>
                     </div>
                 </div>
             </div>
