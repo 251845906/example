@@ -1,14 +1,15 @@
 import React,{ Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Pagination } from 'antd';
+import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
+import C1 from './container_01'
+import C2 from './container_02'
 
 
 class  Inform extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/service",container:"入馆指南"},{start:true,link:"/service/Znan",container:"开馆时间"},{start:false,link:"",container:""}],
-            SituationMenu:'Znan',
+            Breadcrumb:[{link:"/service/VPN",container:"VPN服务"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
+            SituationMenu:'VPN',
             detailOk:false,
         };
         this.loadingFun = this.loadingFun.bind(this);
@@ -21,8 +22,20 @@ class  Inform extends Component{
     }
     render(){
         return(
-            <div className="_ServiceZnan container clearfix">
-                VPN
+            <div className="_ServiceTguang container clearfix">
+                <div className="Tguang clearfix">
+                    <ul className="_Menu fl">
+                        <li><Link to="/service/Tguang/C1">新书上架</Link></li>
+                        <li><Link to="/service/Tguang/C2">借阅排行榜</Link></li>
+                    </ul>
+                    <div className="TguangContainer fl">
+                        <Switch>
+                            <Route exact path="/service/Tguang" component={C1}/>
+                            <Route path="/service/Tguang/C1" component={C1}/>
+                            <Route path="/service/Tguang/C2" component={C2}/>
+                        </Switch>
+                    </div>
+                </div>
             </div>
         )
     }

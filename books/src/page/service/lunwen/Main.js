@@ -1,17 +1,15 @@
 import React,{ Component } from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
-import { Pagination } from 'antd';
 import C1 from './container_01'
 import C2 from './container_02'
-import C3 from './container_03'
 
 
 class  Inform extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/service",container:"入馆指南"},{start:true,link:"/service/Xke",container:"学科服务"},{start:false,link:"",container:""}],
-            SituationMenu:'Xke',
+            Breadcrumb:[{link:"/service/Lwen",container:"论文提交"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
+            SituationMenu:'Lwen',
             detailOk:false,
         };
         this.loadingFun = this.loadingFun.bind(this);
@@ -24,19 +22,17 @@ class  Inform extends Component{
     }
     render(){
         return(
-            <div className="_ServiceXke container clearfix">
-                <div className="Xke clearfix">
+            <div className="_ServiceLwen container clearfix">
+                <div className="Lwen clearfix">
                     <ul className="_Menu fl">
-                        <li><Link to="/service/Xke/C1">学科馆员</Link></li>
-                        <li><Link to="/service/Xke/C2">服务内容</Link></li>
-                        <li><Link to="/service/Xke/C3">资源荐购</Link></li>
+                        <li><Link to="/service/Lwen/C1">论文提交要求</Link></li>
+                        <li><Link to="/service/Lwen/C2">快速提交通道</Link></li>
                     </ul>
-                    <div className="XkeContainer fl">
+                    <div className="LwenContainer fl">
                         <Switch>
-                            <Route exact path="/service/Xke" component={C1}/>
-                            <Route path="/service/Xke/C1" component={C1}/>
-                            <Route path="/service/Xke/C2" component={C2}/>
-                            <Route path="/service/Xke/C3" component={C3}/>
+                            <Route exact path="/service/Lwen" component={C1}/>
+                            <Route path="/service/Lwen/C1" component={C1}/>
+                            <Route path="/service/Lwen/C2" component={C2}/>
                         </Switch>
                     </div>
                 </div>

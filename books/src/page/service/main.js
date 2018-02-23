@@ -31,7 +31,7 @@ class Service extends Component {
                 <div className="_breadcrumb">
                     <Breadcrumb separator=">>" className="container">
                         <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
-                        <Breadcrumb.Item><Link to="/new">本馆服务</Link></Breadcrumb.Item>
+                        <Breadcrumb.Item><Link to="/service">本馆服务</Link></Breadcrumb.Item>
                         <Breadcrumb.Item><Link to={this.state.Breadcrumb[0].link}>{this.state.Breadcrumb[0].container}</Link></Breadcrumb.Item>
                         {this.state.Breadcrumb[1].start && <Breadcrumb.Item><Link to={this.state.Breadcrumb[1].link}>{this.state.Breadcrumb[1].container}</Link></Breadcrumb.Item>}
                         {this.state.Breadcrumb[2].start && <Breadcrumb.Item>  <Link to={this.state.Breadcrumb[2].link}> {this.state.Breadcrumb[2].container}</Link></Breadcrumb.Item>}

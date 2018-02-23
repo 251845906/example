@@ -13,7 +13,7 @@ class  Inform extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/service",container:"入馆指南"},{start:true,link:"/service/Jyue",container:"借阅服务"},{start:false,link:"",container:""}],
+            Breadcrumb:[{link:"/service/Jyue",container:"借阅服务"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
             SituationMenu:'Jyue',
             detailOk:false,
         };
@@ -30,13 +30,13 @@ class  Inform extends Component{
             <div className="_ServiceJyue container clearfix">
                 <div className="Jyue clearfix">
                     <ul className="_Menu fl">
-                        <li><Link to="/service/Jyue/C1">借阅制度</Link></li>
-                        <li><Link to="/service/Jyue/C2">证件办理</Link></li>
-                        <li><Link to="/service/Jyue/C3">预约</Link></li>
-                        <li><Link to="/service/Jyue/C4">预约催还</Link></li>
-                        <li><Link to="/service/Jyue/C5">借阅状态</Link></li>
-                        <li><Link to="/service/Jyue/C6">续借</Link></li>
-                        <li><Link to="/service/Jyue/C7">名人藏书馆</Link></li>
+                        <li><Link to="/service/Jyue/C1" >借阅制度</Link></li>
+                        <li><Link to="/service/Jyue/C2" >证件办理</Link></li>
+                        <li><Link to="/service/Jyue/C3" >预约</Link></li>
+                        <li><Link to="/service/Jyue/C4" >预约催还</Link></li>
+                        <li><Link to="/service/Jyue/C5" >借阅状态</Link></li>
+                        <li><Link to="/service/Jyue/C6" >续借</Link></li>
+                        <li><Link to="/service/Jyue/C7" >名人藏书馆</Link></li>
                     </ul>
                     <div className="JyueContainer fl">
                         <Switch>

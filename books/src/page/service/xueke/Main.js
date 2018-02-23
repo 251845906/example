@@ -10,7 +10,7 @@ class  Inform extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/service",container:"入馆指南"},{start:true,link:"/service/Xke",container:"学科服务"},{start:false,link:"",container:""}],
+            Breadcrumb:[{link:"/service/Xke",container:"学科服务"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
             SituationMenu:'Xke',
             detailOk:false,
         };

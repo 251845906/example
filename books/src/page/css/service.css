@@ -374,3 +374,90 @@
   width: 150px;
   text-align: center;
 }
+.Service ._ServiceLwen {
+  padding: 0 16px 16px 0;
+}
+.Service ._ServiceLwen .LwenContainer {
+  width: 850px;
+}
+.Service ._ServiceLwen .LwenContainer .title {
+  line-height: 46px;
+  background: #f5f5f5;
+  font-size: 20px;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.Service ._ServiceLwen .LwenContainer b {
+  font-size: 16px;
+}
+.Service ._ServiceLwen .LwenContainer p {
+  font-size: 14px;
+}
+.Service ._ServiceLwen .LwenContainer img {
+  display: block;
+  margin: 20px auto;
+}
+.Service ._ServiceTguang {
+  padding: 0 16px 16px 0;
+}
+.Service ._ServiceTguang .TguangContainer {
+  width: 850px;
+}
+.Service ._ServiceTguang .TguangContainer .title {
+  line-height: 46px;
+  background: #f5f5f5;
+  font-size: 20px;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook th {
+  height: 55px;
+  padding: 0 10px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook td {
+  padding: 0 10px;
+  height: 30px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .Num {
+  width: 30px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .BookNum {
+  width: 180px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .BookName {
+  width: 212px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .BookWrite {
+  width: 188px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .BookHouse {
+  width: 160px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook .BookTimer {
+  width: 80px;
+}
+.Service ._ServiceTguang .TguangContainer .NewBook tr td:nth-child(3) {
+  color: #ec4e59;
+}
+.Service ._ServiceTguang .TguangContainer .Phang b {
+  font-size: 16px;
+}
+.Service ._ServiceTguang .TguangContainer .Phang th {
+  height: 30px;
+  font-weight: bold;
+}
+.Service ._ServiceTguang .TguangContainer .Phang td {
+  height: 30px;
+}
+.Service ._ServiceTguang .TguangContainer .Phang .BookName {
+  width: 310px;
+}
+.Service ._ServiceTguang .TguangContainer .Phang .BookWrite {
+  width: 180px;
+}
+.Service ._ServiceTguang .TguangContainer .Phang .BookNum {
+  width: 266px;
+}
+.Service ._ServiceTguang .TguangContainer .Phang .BookCshu {
+  width: 30px;
+}

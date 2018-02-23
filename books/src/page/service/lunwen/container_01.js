@@ -3,69 +3,12 @@ import React,{ Component } from 'react';
 export default () => {
     return(
         <div>
-            <h5 className="title">学科馆员</h5>
-            <p>为了加强图书馆与各院系的联系和沟通，帮助教师和学生充分利用图书馆的资源和服务，也让图书馆能及时了解院系的需求，图书馆建立了“学科馆员制度”，每位学科馆员负责为对口院系的师生服务。
-            </p>
-            <div className="Gyuan">
-                <div className="left fl"><img src="" alt=""/></div>
-                <div className="content fl">
-                    <h6>姓名：</h6>
-                    <p>职务：副研究馆员/咨询部主任</p>
-                    <p>座右铭：做人德为先，待人诚为先，做事勤为先。</p>
-                </div>
-                <div className="content fl">
-                    <h6>负责学院</h6>
-                    <p>文学院</p>
-                    <p>法学院</p>
-                    <p>历史学院</p>
-                </div>
-                <div className="content fl">
-                    <h6>联系方式</h6>
-                    <p>电话：xxxxxxxx</p>
-                    <p>地点：图书馆xxx室</p>
-                    <p>邮箱：xxxxxxx@qq.com</p>
-                </div>
-            </div>
-            <div className="Gyuan">
-                <div className="left fl"><img src="" alt=""/></div>
-                <div className="content fl">
-                    <h6>姓名：</h6>
-                    <p>职务：副研究馆员/咨询部主任</p>
-                    <p>座右铭：做人德为先，待人诚为先，做事勤为先。</p>
-                </div>
-                <div className="content fl">
-                    <h6>负责学院</h6>
-                    <p>文学院</p>
-                    <p>法学院</p>
-                    <p>历史学院</p>
-                </div>
-                <div className="content fl">
-                    <h6>联系方式</h6>
-                    <p>电话：xxxxxxxx</p>
-                    <p>地点：图书馆xxx室</p>
-                    <p>邮箱：xxxxxxx@qq.com</p>
-                </div>
-            </div>
-            <div className="Gyuan">
-                <div className="left fl"><img src="" alt=""/></div>
-                <div className="content fl">
-                    <h6>姓名：</h6>
-                    <p>职务：副研究馆员/咨询部主任</p>
-                    <p>座右铭：做人德为先，待人诚为先，做事勤为先。</p>
-                </div>
-                <div className="content fl">
-                    <h6>负责学院</h6>
-                    <p>文学院</p>
-                    <p>法学院</p>
-                    <p>历史学院</p>
-                </div>
-                <div className="content fl">
-                    <h6>联系方式</h6>
-                    <p>电话：xxxxxxxx</p>
-                    <p>地点：图书馆xxx室</p>
-                    <p>邮箱：xxxxxxx@qq.com</p>
-                </div>
-            </div>
+            <h5 className="title">论文提交要求</h5>
+            <b>山西工商学院大学毕业生离校电子版学位论文提交</b>
+            <img src={require('../../../images/server-lunwen.png')} alt=""/>
+            <p>说明：</p>
+            <p>   1、持有北京大学保密委员会审批通知的涉密论文，不需要提交电子版。离校时按学校关于涉密论文的有关规定办理离校手续。</p>
+            <p>   2、印刷本学位论文请按规定册数及要求交到各院系、所、中心相关负责老师处。具体要求请咨询所在院系、所、中心收缴印刷本论文老师。</p>
         </div>
     )
 }
