@@ -1,7 +1,14 @@
 import React,{ Component } from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
 import C1 from './container_01'
-import C2 from './container_02'
+// import C2 from './container_02'
+// import C3 from './container_03'
+// import C4 from './container_04'
+// import C5 from './container_05'
+// import C6 from './container_06'
+// import C7 from './container_07'
+// import C8 from './container_08'
+
 
 
 class  Inform extends Component{
@@ -49,13 +56,13 @@ class  Inform extends Component{
                         <Switch>
                             <Route exact path="/resource/Dzi" component={C1}/>
                             <Route path="/resource/Dzi/C1" component={C1}/>
-                            <Route path="/resource/Dzi/C2" component={C2}/>
-                            <Route path="/resource/Dzi/C3" component={C3}/>
-                            <Route path="/resource/Dzi/C4" component={C4}/>
-                            <Route path="/resource/Dzi/C5" component={C5}/>
-                            <Route path="/resource/Dzi/C6" component={C6}/>
-                            <Route path="/resource/Dzi/C7" component={C7}/>
-                            <Route path="/resource/Dzi/C8" component={C8}/>
+                            {/*<Route path="/resource/Dzi/C2" component={C2}/>*/}
+                            {/*<Route path="/resource/Dzi/C3" component={C3}/>*/}
+                            {/*<Route path="/resource/Dzi/C4" component={C4}/>*/}
+                            {/*<Route path="/resource/Dzi/C5" component={C5}/>*/}
+                            {/*<Route path="/resource/Dzi/C6" component={C6}/>*/}
+                            {/*<Route path="/resource/Dzi/C7" component={C7}/>*/}
+                            {/*<Route path="/resource/Dzi/C8" component={C8}/>*/}
                         </Switch>
                     </div>
                 </div>

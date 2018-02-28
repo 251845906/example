@@ -2,8 +2,8 @@ import React,{ Component } from 'react';
 import { BrowserRouter as Router , Route , Link , Switch } from 'react-router-dom';
 import { Breadcrumb } from 'antd';
 import ResourceBanner from './ResourceBanner';
-import Dzi from './Dzi'
-import Zzhi from './Zzhi'
+import Dzi from './dianzi/Dzi'
+import Zzhi from './zhizhi/Zzhi'
 
 
 class Service extends Component {
