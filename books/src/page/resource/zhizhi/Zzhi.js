@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import { BrowserRouter as Router, Route, Link ,Switch } from 'react-router-dom';
-import C1 from './container_01'
-import C2 from './container_02'
+// import C1 from './container_01'
+// import C2 from './container_02'
 
 
 class  Inform extends Component{
@@ -28,13 +28,13 @@ class  Inform extends Component{
                         <li><Link to="/service/Tguang/C1">新书上架</Link></li>
                         <li><Link to="/service/Tguang/C2">借阅排行榜</Link></li>
                     </ul>
-                    <div className="TguangContainer fl">
-                        <Switch>
-                            <Route exact path="/service/Tguang" component={C1}/>
-                            <Route path="/service/Tguang/C1" component={C1}/>
-                            <Route path="/service/Tguang/C2" component={C2}/>
-                        </Switch>
-                    </div>
+                    {/*<div className="TguangContainer fl">*/}
+                        {/*<Switch>*/}
+                            {/*<Route exact path="/service/Tguang" component={C1}/>*/}
+                            {/*<Route path="/service/Tguang/C1" component={C1}/>*/}
+                            {/*<Route path="/service/Tguang/C2" component={C2}/>*/}
+                        {/*</Switch>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )

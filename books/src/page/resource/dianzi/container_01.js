@@ -1,4 +1,7 @@
-import React,{ conmponent } from 'react';
+import React,{ Component } from 'react';
+import { Pagination } from 'antd';
+import { Link } from 'react-router-dom';
+import text from '../../../text';
 
 class Container extends Component{
     render(){
@@ -71,8 +74,71 @@ class Container extends Component{
                         <a href="">多语种</a>
                     </div>
                 </div>
-                <h5 className="title"></h5>
+                <h5 className="title">电子期刊</h5>
+                <ul className="_Item clearfix">
+                    <li className="clearfixr" >
+                        <div className="pubDate">
+                            <strong>23</strong>
+                            <p>2017-5</p>
+                        </div>
+                        <div className="introduce">
+                            <h5 className="sub_title">专题一：Microsoft Excel使用技巧</h5>
+                            <p>{text('图书馆拥有丰富的馆藏文献资源，其中电子资源是其重要的组成部分。')}...<Link to="#"><span>[详细]</span></Link></p>
+                        </div>
+                    </li>
+                    <li className="clearfixr" >
+                        <div className="pubDate">
+                            <strong>23</strong>
+                            <p>2017-5</p>
+                        </div>
+                        <div className="introduce">
+                            <h5 className="sub_title">专题一：Microsoft Excel使用技巧</h5>
+                            <p>{text('图书馆拥有丰富的馆藏文献资源，其中电子资源是其重要的组成部分。')}...<Link to="#"><span>[详细]</span></Link></p>
+                        </div>
+                    </li>
+                    <li className="clearfixr" >
+                        <div className="pubDate">
+                            <strong>23</strong>
+                            <p>2017-5</p>
+                        </div>
+                        <div className="introduce">
+                            <h5 className="sub_title">专题一：Microsoft Excel使用技巧</h5>
+                            <p>{text('图书馆拥有丰富的馆藏文献资源，其中电子资源是其重要的组成部分。')}...<Link to="#"><span>[详细]</span></Link></p>
+                        </div>
+                    </li>
+                    <li className="clearfixr" >
+                        <div className="pubDate">
+                            <strong>23</strong>
+                            <p>2017-5</p>
+                        </div>
+                        <div className="introduce">
+                            <h5 className="sub_title">专题一：Microsoft Excel使用技巧</h5>
+                            <p>{text('图书馆拥有丰富的馆藏文献资源，其中电子资源是其重要的组成部分。')}...<Link to="#"><span>[详细]</span></Link></p>
+                        </div>
+                    </li>
+                    <li className="clearfixr" >
+                        <div className="pubDate">
+                            <strong>23</strong>
+                            <p>2017-5</p>
+                        </div>
+                        <div className="introduce">
+                            <h5 className="sub_title">专题一：Microsoft Excel使用技巧</h5>
+                            <p>{text('图书馆拥有丰富的馆藏文献资源，其中电子资源是其重要的组成部分。')}...<Link to="#"><span>[详细]</span></Link></p>
+                        </div>
+                    </li>
+                </ul>
+                <Pagination
+                    showQuickJumper
+                    defaultCurrent={1}
+                    //初始页面
+                    total={100}
+                    //{/*总页数*/}
+                    onChange={(i)=>{
+                    }}
+                    // 点击回调
+                />
             </div>
         )
     }
 }
+export default Container

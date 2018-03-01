@@ -18,9 +18,10 @@ class  Inform extends Component{
             Breadcrumb:[{link:"/service/Tguang",container:"阅读推广"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
             SituationMenu:'Tguang',
             detailOk:false,
+            JsuoIpt:''
         };
         this.loadingFun = this.loadingFun.bind(this);
-        this.JsuoIptChange = this.JsuoIptChangen.bind(this);
+        this.JsuoIptChange = this.JsuoIptChange.bind(this);
     }
     componentDidMount(){
         this.loadingFun(this.state)
@@ -28,8 +29,9 @@ class  Inform extends Component{
     loadingFun(i){
         this.props.Breadcrumb(i)
     }
-    JsuoIptChange(){
-
+    JsuoIptChange(e){
+        this.setState({JsuoIpt:e.target.value});
+        console.log(this.state.JsuoIpt)
     }
     render(){
         return(
