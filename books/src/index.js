@@ -12,10 +12,11 @@ import './page/css/index.css';   // 首页css
 //===============================
 import './page/css/stuation.css'; // 本官概括css
 // =================================
-import './page/css/new.css'; // 本官概括css
+import './page/css/new.css'; // 新闻资讯css
 // =================================
-import './page/css/service.css'; // 本官概括css
+import './page/css/service.css'; // 本官服务css
 // =================================
+import './page/css/resource.css'  // 馆藏css
 
 
 

@@ -11,12 +11,13 @@ import C1 from './container_01'
 
 
 
+
 class  Inform extends Component{
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/service/Tguang",container:"阅读推广"},{start:false,link:"",container:""},{start:false,link:"",container:""}],
-            SituationMenu:'Tguang',
+            Breadcrumb:[{link:"/resource/Dzi",container:"电子资源"},{start:false,link:"",container:"开馆时间"},{start:false,link:"",container:""}],
+            SituationMenu:'Dzi',
             detailOk:false,
             JsuoIpt:''
         };

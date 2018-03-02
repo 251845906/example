@@ -5,7 +5,7 @@ import { Carousel } from 'antd';
 class ResourceBanner extends Component{
     render(){
         return(
-            <div className="Situation_banner">
+            <div className="Resource_banner">
                 <Carousel
                     autoplay={true}
                     autoplaySpeed={3000}

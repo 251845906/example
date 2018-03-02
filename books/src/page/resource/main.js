@@ -6,12 +6,13 @@ import Dzi from './dianzi/Dzi'
 import Zzhi from './zhizhi/Zzhi'
 
 
+
 class Service extends Component {
     constructor(props){
         super(props);
         this.state = {
-            Breadcrumb:[{link:"/resource",container:"馆藏"},{start:false,link:"",container:"开馆时间"},{start:false,link:"",container:""}],
-            SituationMenu:'resource',
+            Breadcrumb:[{link:"/resource/Dzi",container:"电子资源"},{start:false,link:"",container:"开馆时间"},{start:false,link:"",container:""}],
+            SituationMenu:'Dzi',
             detailOk:false,
         };
         this.handLoading = this.handLoading.bind(this)
@@ -20,21 +21,21 @@ class Service extends Component {
         this.setState(obj)
     }
     render(){
-        console.log(this.state.SituationMenu)
+        console.log(this.state)
         return(
-            <div className="box Service">
+            <div className="box Resource">
                 <ResourceBanner />
                 <div className="_breadcrumb">
                     <Breadcrumb separator=">>" className="container">
                         <Breadcrumb.Item><span className="iconfont">&#xe603;</span>当前位置：<Link to="/">首页</Link></Breadcrumb.Item>
-                        <Breadcrumb.Item><Link to="/service">馆藏资源</Link></Breadcrumb.Item>
+                        <Breadcrumb.Item><Link to="/resource">馆藏资源</Link></Breadcrumb.Item>
                         <Breadcrumb.Item><Link to={this.state.Breadcrumb[0].link}>{this.state.Breadcrumb[0].container}</Link></Breadcrumb.Item>
                         {this.state.Breadcrumb[1].start && <Breadcrumb.Item><Link to={this.state.Breadcrumb[1].link}>{this.state.Breadcrumb[1].container}</Link></Breadcrumb.Item>}
                         {this.state.Breadcrumb[2].start && <Breadcrumb.Item>  <Link to={this.state.Breadcrumb[2].link}> {this.state.Breadcrumb[2].container}</Link></Breadcrumb.Item>}
                     </Breadcrumb>
                 </div>
                 { this.state.detailOk ||
-                <div className="resourceMenu container">
+                <div className="ResourceMenu container">
                     <h3>资源  /<span> RESOURCES</span></h3>
                     <ul>
                         <li className={this.state.SituationMenu === 'Dzi' ? 'active':''}><span className="iconfont">&#xe61a; </span><Link to="/resource">电子资源</Link> </li>
