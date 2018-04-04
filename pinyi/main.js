@@ -20,75 +20,43 @@ layui.use('layer',function () {
         ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机
     });
 })
-layui.use('laypage',function(){
-    var laypage = layui.laypage;
-    //执行一个laypage实例
-    laypage.render({
-        elem: 'paging1', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
+$(function(){Page(30)});
+function Page(zongye){
+    $('.paging .all_page').html(parseInt(zongye))
+    $('.paging').click(function(e){
+        if($(e.target).attr('class') === 'prev_page'){
+            $(this).find('.now_page').html(function(){
+                return parseInt($(this).html())<=1 ?  parseInt($(this).html()):parseInt($(this).html())-1
+            })
+        }else if($(e.target).attr('class') === 'next_page'){
+            $(this).find('.now_page').html(function(){
+                return parseInt($(this).html())>=zongye ?  parseInt($(this).html()):parseInt($(this).html())+1
+            })
+        }else if($(e.target).attr('class') === 'ipt_btn'){
+            if(/^[0-9]*$/.test($(e.target).siblings('input').val())){
+                   if(parseInt($(e.target).siblings('input').val())>=1&&$(e.target).siblings('input').val()<=parseInt(zongye)){
+                       $(this).find('.now_page').html(function(){
+                           return $(e.target).siblings('input').val();
+                       })
+                    }
+            }
         }
     });
-    laypage.render({
-        elem: 'paging2', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-    laypage.render({
-        elem: 'paging3', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-    laypage.render({
-        elem: 'case_paging1', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-    laypage.render({
-        elem: 'case_paging2', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-    laypage.render({
-        elem: 'case_paging3', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-    laypage.render({
-        elem: 'case_paging4', //注意，这里的 test1 是 ID，不用加 # 号
-        count: 50, //数据总数，从服务端得到
-        limit:1,
-        jump:function (obj,first) {
-            console.log(obj.curr)
-        }
-    });
-})
+}
 $('.nav li').hover(function(){$(this).find('.nav_pull').show()},function (){$(this).find('.nav_pull').hide()});
-var timer = setInterval(function(){
+function IssueBox(){
     $('.IssueBox').animate({
         top:'-98px'
     },800,function(){
         $('.IssueBox').css('top','0');
         $('.IssueBox').append($('.IssueBox').children('.list').eq(0));
     })
-},2000);
+}
+var timer;
+timer = setInterval(function(){IssueBox()},2000);
+$('.IssueBox').hover(function () {clearInterval(timer)},function(){
+    timer = setInterval(function(){IssueBox()},2000);
+})
 $('.details_about .Item_List .last').click(function(){
     $('.details_about .Item_List .slide').animate({
         left:'-290px'

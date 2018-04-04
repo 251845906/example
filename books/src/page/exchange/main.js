@@ -1,10 +1,6 @@
-import React,{ Compoment } from 'react';
-
-
-const Index = () => {
-    return(
-        <p>exchange</p>
-    )
+import React from 'react';
+export default ()=>{
+        return(
+            <p>exchange</p>
+        )
 };
-
-export default Index;

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}">
+    <title>{dede:global.cfg_webname/}</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/css/jquery.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+    <div class="section_01 box">
+        <div class="tittle"></div>
+        <ul class="container clearfix">
+            <li>
+                <a href=""></a>
+                <h6>标志VI设计</h6>
+                <p>20余年广告 <br /> 制造史，经验丰富技术专业</p>
+            </li>
+            <li>
+                <a href=""></a>
+                <h6>文化建设设计施工</h6>
+                <p>1000平标准印<br /> 刷厂房+2000平广告生产车间</p>
+            </li>
+            <li>
+                <a href=""></a>
+                <h6>画册设计印刷</h6>
+                <p>30余人制作 <br /> 安装团队无间隙还原设计稿</p>
+            </li>
+            <li>
+                <a href=""></a>
+                <h6>手提袋定制</h6>
+                <p>世界500强 <br /> 石化，10年合作服务商</p>
+            </li>
+        </ul>
+    </div>
+    <div class="about box">
+        <div class="container clearfix">
+            <div class="about_introduce fl">
+                <div class="introduce_text">
+                    <div class="introduce_bj"></div>
+                    <h4>郑州品翼传媒有限公司</h4>
+                    <p>{dede:sql sql="SELECT body FROM `yywl_sgpage` where aid = 1" }  
+[field:body /]  
+{/dede:sql} </p>
+                </div>
+            </div>
+            <div class="about_server fl">
+                <div class="server_01 clearfix">
+                    <span class="server_img fl"><img src="./images/about-img1.png" alt=""></span>
+                    <span class="server_text fl">
+                        <div class="server-title">
+                            <h5>服务支持</h5>
+                            <span class="subtitle">————service support </span>
+                            <p>{dede:sql sql="SELECT body FROM `yywl_sgpage` where aid = 2" }  
+[field:body /]  
+{/dede:sql} </p>
+                        </div>
+                    </span>
+                </div>
+                <div class="server_02 clearfix">
+                    <span class="server_text fl">
+                        <div class="server-title">
+                            <h5>生产和实力</h5>
+                            <span class="subtitle">Production strength————</span>
+                            <p>{dede:sql sql="SELECT body FROM `yywl_sgpage` where aid = 3" }  
+[field:body /]  
+{/dede:sql} </p>
+                        </div>
+                    </span>
+                    <span class="server_img fl"><img src="./images/about-img1.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="case box">
+        <div class="container">
+            <div class="case_Item">
+                <div class="title">标志VI设计</div>
+                <div class="bigImg">
+					
+				{dede:arclist flag='c,p'  orderby='pubdate' typeid='2'  limit='0,2'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+					
+                    
+                </div>
+                <div class="smallImg">
+                    
+					
+				{dede:arclist flag='c,p'  orderby='pubdate' typeid='2'  limit='2,4'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                    
+                </div>
+            </div>
+            <div class="case_Item">
+                <div class="title">手提袋定制</div>
+                <div class="bigImg">
+                    
+                   {dede:arclist flag='c,p'  orderby='pubdate' typeid='5'  limit='0,2'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                </div>
+                <div class="smallImg">
+               {dede:arclist flag='c,p'  orderby='pubdate' typeid='5'  limit='2,4'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                    
+                </div>
+            </div>
+            <div class="case_Item">
+                <div class="title">画册设计印刷</div>
+                <div class="bigImg">
+                    
+                   {dede:arclist flag='c,p'  orderby='pubdate' typeid='4'  limit='0,2'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                </div>
+                <div class="smallImg">
+               {dede:arclist flag='c,p'  orderby='pubdate' typeid='4'  limit='2,4'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                    
+                </div>
+            </div>
+            <div class="case_Item">
+                <div class="title">文化建设设计施工</div>
+                <div class="bigImg">
+                    
+                   {dede:arclist flag='c,p'  orderby='pubdate' typeid='3'  limit='0,2'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                </div>
+                <div class="smallImg">
+               {dede:arclist flag='c,p'  orderby='pubdate' typeid='3'  limit='2,4'}
+                    <a href="[field:arcurl/]">
+                        <div class="Img"></div><img src="[field:litpic/]" alt="[field:title/]">
+                        <div class="text">
+                            <div class="bj"></div>
+                            <div class="wd">
+                                <h4>[field:title/]</h4>
+                                <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                            </div>
+                        </div>
+                    </a>
+
+			  {/dede:arclist}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_02 box"></div>
+    <div class="new">
+        <div class="container clearfix  ">
+            <div class="left fl">
+                <div class="title">
+                    <h5 class="clearfix">新闻资讯<a href="/xinwenzixun/" class="more">更多>></a></h5>
+                </div>
+
+				
+				 {dede:arclist flag='c,p'  orderby='pubdate' typeid='7'  limit='0,1'}
+                      <div class="rotNew">
+                    <a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:title/]"></a>
+                    <a href="[field:arcurl/]">
+                        <h6>[field:title/]</h6>
+                        <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                    </a>
+                </div>
+			  {/dede:arclist}
+				
+                <div class="listNew">
+				
+				{dede:arclist flag='c'  orderby='pubdate' typeid='7'  limit='1,7'}
+				<a href="[field:arcurl/]"><b></b>[field:title/]<span>【[field:pubdate function="MyDate('y-m-d',@me)"/]】</span></a>
+			  {/dede:arclist}
+                    
+                </div>
+            </div>
+            <div class="cont fl">
+                <div class="title">
+                    <h5 class="clearfix">印刷知识<a href="/yinshuazhishi/" class="more">更多>></a></h5>
+                </div>
+               {dede:arclist flag='c,p'  orderby='pubdate' typeid='8'  limit='0,1'}
+                      <div class="rotNew">
+                    <a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:title/]"></a>
+                    <a href="[field:arcurl/]">
+                        <h6>[field:title/]</h6>
+                        <p>[field:description function='cn_substr(@me,200)'/]...</p>
+                    </a>
+                </div>
+			  {/dede:arclist}
+                <div class="listNew">
+				{dede:arclist flag='c'  orderby='pubdate' typeid='8'  limit='1,7'}
+				<a href="[field:arcurl/]"><b></b>[field:title/]<span>【[field:pubdate function="MyDate('y-m-d',@me)"/]】</span></a>
+			  {/dede:arclist}
+                </div>
+            </div>
+            <div class="right fl">
+                <div class="title">
+                    <h5 class="clearfix">常见问题<a href="/changjianwenti/" class="more">更多>></a></h5>
+                </div>
+                <div class="listIssue">
+                    <div class="IssueBox">
+					
+			  {dede:arclist flag='c'  orderby='pubdate' typeid='9'  limit='0,8'}
+				        <div class="list">
+                            <div class="ask clearfix"><b>W</b><a href="[field:arcurl/]">[field:title/]</a></div>
+                            <div class="answer clearfix"><b>D</b><a href="[field:arcurl/]">[field:description function='cn_substr(@me,200)'/] <span>...</span></a></div>
+                        </div>
+			  {/dede:arclist}
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {dede:include filename="footer.htm"/}
+</body>
+<script src="/layui/layui.js"></script>
+<script src="/css/main.js"></script>
+</html>

@@ -13,9 +13,9 @@ const Index = () => {
     )
 };
 class Banner extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
     render(){
         return(
             <div className="banner">
@@ -95,9 +95,9 @@ class Container extends Component{
     }
 }
 class Trends extends Component{
-    constructor(props){
-        super(props);
-    }
+    // constructor(props){
+    //     super(props);
+    // }
     handlCarousel(e){
         const siblings = e.target.parentNode.childNodes;
         for(let i = 0;i< siblings.length;i++){
