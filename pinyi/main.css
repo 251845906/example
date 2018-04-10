@@ -93,21 +93,21 @@ body {
   height: 66px;
 }
 .header .headline .logo_introduce {
-  display: inline-block;
-  width: 195px;
-  margin-left: 15px;
-  margin-top: 10px;
-  vertical-align: middle;
+    display: inline-block;
+    width: 195px;
+    margin-left: 15px;
+    margin-top: 20px;
+    vertical-align: middle;
 }
 .header .headline .logo_introduce h3 {
-  font-size: 24px;
-  color: #c70c1f;
-  line-height: 20px;
+    font-size: 24px;
+    color: #c70c1f;
+    line-height: 20px;
 }
 .header .headline .logo_introduce p {
-  font-size: 15px;
-  color: #222222;
-  line-height: 40px;
+    font-size: 15px;
+    color: #222;
+    line-height: 40px;
 }
 .header .headline .contact {
   background: url(../images/contact.png) no-repeat left top;
@@ -124,10 +124,10 @@ body {
 }
 .nav ul li {
   float: left;
-  padding: 25px 35px;
+  padding: 25px 30px;
 }
 .nav ul li a {
-  font-size: 16px;
+  font-size: 18px;
   color: #2b2b2b;
 }
 .nav ul li a:hover {
@@ -138,7 +138,7 @@ body {
   position: absolute;
   width: 100%;
   left: 0%;
-  top: 70px;
+  top: 74px;
   background: #fff;
   z-index: 55;
   height: 294px ;
@@ -256,30 +256,25 @@ body {
 }
 .about {
   background: #f8f8f8;
-  height: 600px;
+  height: 680px;
 }
-.about .container .title {
-  font-size: 24px;
-  color: #262626;
-  line-height: 70px;
-  text-indent: 22px;
-  font-weight: bold;
+.about .container {
+  background: url("../images/about.png") no-repeat 14px 60px;
 }
 .about .container .about_introduce {
-  width: 495px;
+  width: 460px;
   height: 480px;
   background: url("../images/about-img.png") no-repeat center;
-  background-size: 100%;
+  margin: 154px 0px 0px 35px;
   position: relative;
   overflow: hidden;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 25px;
 }
 .about .container .about_introduce .introduce_text {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 480px;
   height: 205px;
 }
 .about .container .about_introduce .introduce_text .introduce_bj {
@@ -307,7 +302,7 @@ body {
   font-size: 14px;
   color: #ffffff;
   margin-left: 20px;
-  width: 460px;
+  width: 410px;
   text-indent: 28px;
 }
 .about .container .about_server .server_01 {
@@ -315,8 +310,8 @@ body {
   height: 227px;
   background: #ffffff;
   border: 1px solid #b6b6b6;
+  margin: 154px 0px 24px 0px;
   overflow: hidden;
-  margin-bottom: 22px;
 }
 .about .container .about_server .server_01 .server_img {
   width: 370px;
@@ -476,7 +471,7 @@ body {
   position: absolute;
   bottom: -116px;
   left: 0;
-  height: 130px;
+  height: 170px;
   width: 100%;
   transition: .3s;
 }
@@ -518,11 +513,11 @@ body {
   background: url("../images/section2.png") no-repeat center;
 }
 .new {
-  margin-bottom: 54px;
+  margin-bottom: 30px;
 }
 .new .title {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .new .title h5 {
   font-size: 20px;
@@ -539,7 +534,7 @@ body {
 .new .rotNew {
   width: 100%;
   border-bottom: 1px dashed #636363;
-  height: 225px;
+  height: 240px;
 }
 .new .rotNew a:nth-child(1) {
   display: block;
@@ -551,19 +546,19 @@ body {
   height: 100%;
 }
 .new .rotNew h6 {
-  font-size: 16px;
-  color: #2d2d2d;
-  line-height: 28px;
-  margin-top: 5px;
+    font-size: 16px;
+    color: #2d2d2d;
+    line-height: 25px;
+    margin-top: 10px;
 }
 .new .rotNew p {
-  font-size: 12px;
-  color: #2d2d2d;
-  line-height: 22px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
+    font-size: 12px;
+    color: #2d2d2d;
+    line-height: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .new .rotNew a:nth-child(2):hover h6 {
   color: #c70c1f;
@@ -802,22 +797,22 @@ body {
   display: block;
 }
 .details_new .ItemBox .Item {
-  width: 460px;
-  float: left;
-  margin-left: 130px;
-  margin-bottom: 30px;
+    width: 600px;
+    float: left;
+    margin-left: 35px;
+    margin-bottom: 20px;
 }
 .details_new .ItemBox .Item .left {
-  width: 80px;
-  height: 90px;
-  border: 1px solid #A6A6A6;
-  text-align: center;
+    width: 100px;
+    height: 120px;
+    border: 1px solid #A6A6A6;
+    text-align: center;
 }
 .details_new .ItemBox .Item .left b {
-  display: block;
-  font-size: 28px;
-  color: #666666;
-  margin-top: 14px;
+    display: block;
+    font-size: 28px;
+    color: #666;
+    margin-top: 25px;
 }
 .details_new .ItemBox .Item .left p {
   font-size: 12px;
@@ -826,9 +821,10 @@ body {
   line-height: 18px;
 }
 .details_new .ItemBox .Item .right {
-  width: 350px;
-  margin-left: 15px;
-  padding-top: 10px;
+    width: 470px;
+    margin-left: 15px;
+    padding-top: 10px;
+    line-height: 25px;
 }
 .details_new .ItemBox .Item .right h5 {
   font-size: 16px;
@@ -836,14 +832,8 @@ body {
   font-weight: bold;
   line-height: 24px;
 }
-.details_new .ItemBox .Item .right h5 b {
-  white-space: nowrap;
-  overflow: hidden;
-}
 .details_new .ItemBox .Item .right p {
   font-size: 12px;
-  line-height: 20px;
-  overflow: hidden;
 }
 .details_new .ItemBox .Item .right p a {
   color: #c70c1f;
@@ -961,12 +951,11 @@ body {
 }
 .details_case_xq .case_xq .product .left {
   width: 290px;
-  height: 300px;
+  height: 420px;
   overflow: hidden;
 }
 .details_case_xq .case_xq .product .left img {
   width: 100%;
-  height: 100%;
 }
 .details_case_xq .case_xq .product .right {
   width: 406px;
@@ -1093,16 +1082,16 @@ body {
   display: none;
 }
 .details_case .details_Item .Item .Item_list {
-  float: left;
-  width: 300px;
-  margin: 0 10px 20px 10px;
+    float: left;
+    width: 300px;
+    margin: 0 10px 20px 10px;
 }
 .details_case .details_Item .Item .Item_list a:nth-child(1) {
-  display: block;
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-  border: 1px solid #d8d8d8;
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border: 1px solid #d8d8d8;
 }
 .details_case .details_Item .Item .Item_list a:nth-child(1) img {
   width: 100%;
@@ -1119,10 +1108,10 @@ body {
   margin-bottom: 50px;
 }
 .details_about .section .Img {
-  width: 460px;
+  width: 375px;
   height: 394px;
   background: #ccc;
-  margin-left: 36px;
+  margin-left: 80px;
   overflow: hidden;
 }
 .details_about .section .Img img {
@@ -1130,8 +1119,8 @@ body {
   height: 100%;
 }
 .details_about .section .text {
-  width: 688px;
-  margin-left: 57px;
+  width: 518px;
+  margin-left: 90px;
 }
 .details_about .section .text h4 {
   font-size: 20px;
