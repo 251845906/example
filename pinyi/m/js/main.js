@@ -29,3 +29,31 @@ var mySwiper = new Swiper ('.swiper-container', {
         pagination: '.swiper-pagination',
         // 如果需要前进后退按钮
 })
+    // alert($('html').css('fontSize'))
+    // alert($(window).width())
+// if(navigator.userAgent.indexOf('baiduboxapp')>0){
+//     if(parseInt($(window).width()) === 360){
+//         $('html').css('fontSize','48px')
+//     }
+// }
+// if(navigator.userAgent.indexOf('HUAWEIDUK-AL20')>0&&navigator.userAgent.indexOf('MQQBrowser')>0){
+//     if(parseInt($(window).width()) === 360){
+//         $('html').css('fontSize','64px')
+//     }
+// }
+    // alert(navigator.appCodeName)
+    // alert(navigator.appName)
+    // alert(navigator.appVersion)
+    // alert(navigator.cookieEnabled)
+    // alert(navigator.platform)
+    // alert(navigator.userAgent)
+    // alert(navigator.systemLanguage)
+
+    // if(parseInt($(window).width()) === 360){
+    //     $('html').css('fontSize','48px')
+    // }
+    // window.resize(function(){
+    //     if(parseInt($(window).width()) === 360){
+    //         $('html').css('fontSize','48px')
+    //     }
+    // })

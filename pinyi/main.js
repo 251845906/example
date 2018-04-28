@@ -43,6 +43,27 @@ function Page(zongye){
         }
     });
 }
+$(window).scroll(function(){
+    var $scrollTop = $(document).scrollTop()
+    if($scrollTop>900){
+        $('.adside').fadeIn(200);
+    }else{
+        $('.adside').fadeOut(200);
+    };
+})
+if($('.adside').html() !== undefined ){
+    var $left = $('.case .container').offset().left;
+    $('.adside').css('left',$left-50);
+    $(window).resize(function() {
+        var $left = $('.case .container').offset().left;
+        $('.adside').css('left',$left-50)
+    });
+    $('.to_top').click(function(){
+        $('body,html').animate({
+            scrollTop:0,
+        },500)
+    })
+}
 $('.nav li').hover(function(){$(this).find('.nav_pull').show()},function (){$(this).find('.nav_pull').hide()});
 function IssueBox(){
     $('.IssueBox').animate({

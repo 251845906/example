@@ -1,7 +1,7 @@
 body {
-  margin: 0 auto;
   background: #f9f9f9;
-  width: 100%;
+  width: 7.5rem;
+  margin: 0 auto !important;
 }
 header {
   height: 0.88rem;
@@ -93,17 +93,17 @@ header nav.active {
   height: 100%;
 }
 .menu {
-  padding: 0.33rem 0.33rem 0.2rem 0.33rem;
+  padding: 0.33rem 0;
 }
 .menu a {
   display: inline-block;
-  margin-right: 0.64rem;
-  width: 1.2rem;
+  width: 25%;
 }
 .menu a span {
   display: block;
   width: 1.2rem;
   height: 1.2rem;
+  margin: 0 auto;
 }
 .menu a span img {
   width: 100%;
@@ -126,6 +126,9 @@ header nav.active {
 .product h2 img {
   width: 100%;
   height: 100%;
+}
+.product .product_container {
+  width: 100%;
 }
 .product .product_container h3 {
   font-size: 0.28rem;
@@ -150,16 +153,15 @@ header nav.active {
   padding: 0.3rem;
 }
 .product .product_container .product_List .big_List {
-  width: 6.48rem;
-  height: 3.78rem;
+  height: 4.28rem;
   background: #fff;
   padding: 0.2rem;
   border: 1px solid #e6e6e6;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 .product .product_container .product_List .big_List a {
   display: block;
-  width: 6.48rem;
+  width: 100%;
   height: 2.4rem;
 }
 .product .product_container .product_List .big_List a img {
@@ -178,7 +180,7 @@ header nav.active {
 }
 .product .product_container .product_List .big_List p {
   font-size: 0.24rem;
-  line-height: 0.34rem;
+  line-height: 0.36rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -186,12 +188,12 @@ header nav.active {
   word-break: break-all;
 }
 .product .product_container .product_List .small_List .List_cont {
-  width: 3.01rem;
-  height: 4.45rem;
+  width: 2.95rem;
+  height: 5rem;
   background: #fff;
   padding: 0.14rem;
   border: 1px solid #e6e6e6;
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
   overflow: hidden;
 }
 .product .product_container .product_List .small_List .List_cont a {
@@ -206,7 +208,7 @@ header nav.active {
 .product .product_container .product_List .small_List .List_cont h4 {
   margin-top: 0.12rem;
   font-size: 0.28rem;
-  line-height: 0.34rem;
+  line-height: 0.4rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -215,7 +217,7 @@ header nav.active {
 }
 .product .product_container .product_List .small_List .List_cont p {
   font-size: 0.24rem;
-  line-height: 0.3rem;
+  line-height: 0.34rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -231,7 +233,6 @@ header nav.active {
 .new h2 {
   text-align: center;
   background: #fff;
-  height: 0.7rem;
   padding-top: 0.5rem;
 }
 .new h2 img {
@@ -246,7 +247,7 @@ header nav.active {
 .new .subMenu a {
   line-height: 0.45rem;
   display: inline-block;
-  width: 2.48rem;
+  width: 33%;
   text-align: center;
   font-size: 0.3rem;
   border-right: 1px solid #e6e6e6;
@@ -263,7 +264,7 @@ header nav.active {
 }
 .new .newItem .Item_01 a {
   display: block;
-  height: 1.4rem;
+  height: 1.5rem;
   background: #fff;
   border: 1px solid  #e6e6e6;
   border-bottom: none;
@@ -283,9 +284,13 @@ header nav.active {
   line-height: 0.6rem;
   margin: 0.2rem 0 0 0;
 }
+.new .newItem .Item_01 a .left p {
+  font-size: 0.24rem;
+  color: #666;
+}
 .new .newItem .Item_01 a .right {
   margin-top: 0.05rem;
-  width: 4.5rem;
+  width: 4.55rem;
   height: 100%;
 }
 .new .newItem .Item_01 a .right h3 {
@@ -296,6 +301,7 @@ header nav.active {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  font-weight: bold;
 }
 .new .newItem .Item_01 a .right p {
   line-height: 0.34rem;
@@ -320,9 +326,9 @@ header nav.active {
 }
 .new .newItem .Item_02 a {
   display: block;
-  height: 1.4rem;
+  height: 1.5rem;
   background: #fff;
-  border: 1px solid #e6e6e6;
+  border: 1px solid  #e6e6e6;
   border-bottom: none;
   padding: 0.2rem;
 }
@@ -340,9 +346,13 @@ header nav.active {
   line-height: 0.6rem;
   margin: 0.2rem 0 0 0;
 }
+.new .newItem .Item_02 a .left p {
+  font-size: 0.24rem;
+  color: #666;
+}
 .new .newItem .Item_02 a .right {
   margin-top: 0.05rem;
-  width: 4.5rem;
+  width: 4.55rem;
   height: 100%;
 }
 .new .newItem .Item_02 a .right h3 {
@@ -353,6 +363,7 @@ header nav.active {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  font-weight: bold;
 }
 .new .newItem .Item_02 a .right p {
   line-height: 0.34rem;
@@ -370,14 +381,14 @@ header nav.active {
   font-size: 0.24rem;
 }
 .new .newItem .Item_02 a:last-child {
-  border: 1px solid #e6e6e6;
+  border: 1px solid  #e6e6e6;
 }
 .new .newItem .Item_03 {
   display: none;
 }
 .new .newItem .Item_03 .IssueBox {
   display: block;
-  height: 1.4rem;
+  height: 1.5rem;
   background: #fff;
   border: 1px solid  #e6e6e6;
   border-bottom: none;
@@ -420,7 +431,7 @@ header nav.active {
 }
 .new .newItem .Item_03 .IssueBox .answer em {
   float: left;
-  width: 5.8rem;
+  width: 90%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -450,7 +461,7 @@ footer a:link {
   color: #fff;
 }
 footer p {
-  font-size: 0.2rem;
+  font-size: 0.24rem;
   text-align: center;
 }
 .footer_menu {
@@ -544,10 +555,11 @@ footer p {
   width: 100%;
 }
 .details_case .details_menu .menu_Box a {
-  font-size: 0.28rem;
+  font-size: 0.26rem;
   display: inline-block;
   width: 25%;
   text-align: center;
+  margin-left: -3px;
 }
 .details_case .details_menu .menu_Box a.active {
   color: #c70c1f;
@@ -560,20 +572,23 @@ footer p {
   display: none;
 }
 .details_case .details_container .Item_box .Item {
-  width: 3.1rem;
+  width: 3.05rem;
   overflow: hidden;
-  margin-right: 0.2rem;
+  margin-right: 0.3rem;
   margin-bottom: 0.24rem;
   background: #fff;
   padding: 0.12rem;
   border: 1px solid #e6e6e6;
+  height: 3.8rem;
 }
 .details_case .details_container .Item_box .Item a {
   display: block;
   width: 100%;
+  height: 2.1rem;
 }
 .details_case .details_container .Item_box .Item a img {
   width: 100%;
+  height: 100%;
 }
 .details_case .details_container .Item_box .Item h4 {
   font-size: 0.28rem;
@@ -680,6 +695,7 @@ footer p {
   display: inline-block;
   width: 25%;
   text-align: center;
+  margin-left: -3px;
 }
 .details_new .details_menu .menu_Box a.active {
   color: #c70c1f;
@@ -689,7 +705,7 @@ footer p {
 }
 .details_new .details_container .Item_box1 .Item {
   display: block;
-  height: 1.4rem;
+  height: 1.5rem;
   background: #fff;
   border: 1px solid  #e6e6e6;
   border-bottom: none;
@@ -709,6 +725,10 @@ footer p {
   line-height: 0.6rem;
   margin: 0.2rem 0 0 0;
 }
+.details_new .details_container .Item_box1 .Item .left p {
+  font-size: 0.24rem;
+  color: #666;
+}
 .details_new .details_container .Item_box1 .Item .right {
   margin-top: 0.05rem;
   width: 4.5rem;
@@ -722,6 +742,7 @@ footer p {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  font-weight: bold;
 }
 .details_new .details_container .Item_box1 .Item .right p {
   line-height: 0.34rem;
@@ -749,7 +770,7 @@ footer p {
 }
 .details_new .details_container .Item_box2 .Item {
   display: block;
-  height: 1.4rem;
+  height: 1.8rem;
   background: #fff;
   border: 1px solid  #e6e6e6;
   border-bottom: none;
@@ -769,6 +790,10 @@ footer p {
   line-height: 0.6rem;
   margin: 0.2rem 0 0 0;
 }
+.details_new .details_container .Item_box2 .Item .left p {
+  font-size: 0.24rem;
+  color: #666;
+}
 .details_new .details_container .Item_box2 .Item .right {
   margin-top: 0.05rem;
   width: 4.5rem;
@@ -782,6 +807,7 @@ footer p {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
+  font-weight: bold;
 }
 .details_new .details_container .Item_box2 .Item .right p {
   line-height: 0.34rem;
@@ -807,58 +833,67 @@ footer p {
 .details_new .details_container .Item_box3 {
   display: none;
 }
-.details_new .details_container .Item_box3 .IssueBox {
+.details_new .details_container .Item_box3 .Item {
   display: block;
-  height: 1.4rem;
+  height: 1.8rem;
   background: #fff;
   border: 1px solid  #e6e6e6;
   border-bottom: none;
   padding: 0.2rem;
 }
-.details_new .details_container .Item_box3 .IssueBox .ask {
-  margin: 0.1rem 0;
-}
-.details_new .details_container .Item_box3 .IssueBox .ask b {
-  float: left;
-  width: 0.4rem;
-  height: 0.4rem;
-  background: #c70c1f;
-  color: #fff;
-  line-height: 0.4rem;
+.details_new .details_container .Item_box3 .Item .left {
+  width: 1.6rem;
+  height: 100%;
+  border: 1px solid #e6e6e6;
   text-align: center;
-  font-size: 0.24rem;
-  margin-right: 0.2rem;
+  margin-right: 0.37rem;
 }
-.details_new .details_container .Item_box3 .IssueBox .ask em {
-  float: left;
-  width: 5.8rem;
+.details_new .details_container .Item_box3 .Item .left b {
+  font-size: 0.5rem;
+  color: #666;
+  display: block;
+  line-height: 0.6rem;
+  margin: 0.2rem 0 0 0;
+}
+.details_new .details_container .Item_box3 .Item .left p {
+  font-size: 0.24rem;
+  color: #666;
+}
+.details_new .details_container .Item_box3 .Item .right {
+  margin-top: 0.05rem;
+  width: 4.5rem;
+  height: 100%;
+}
+.details_new .details_container .Item_box3 .Item .right h3 {
+  font-size: 0.28rem;
+  line-height: 0.34rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
-  font-size: 0.24rem;
+  font-weight: bold;
 }
-.details_new .details_container .Item_box3 .IssueBox .answer b {
-  float: left;
-  width: 0.4rem;
-  height: 0.4rem;
-  background: #666666;
-  color: #fff;
-  line-height: 0.4rem;
-  text-align: center;
-  font-size: 0.24rem;
-  margin-right: 0.2rem;
+.details_new .details_container .Item_box3 .Item .right p {
+  line-height: 0.34rem;
 }
-.details_new .details_container .Item_box3 .IssueBox .answer em {
-  float: left;
-  width: 5.8rem;
+.details_new .details_container .Item_box3 .Item .right p em {
+  font-size: 0.24rem;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-all;
+}
+.details_new .details_container .Item_box3 .Item .right p span {
+  color: #c70c1f;
   font-size: 0.24rem;
+}
+.details_new .details_container .Item_box3 .Item .Item:last-child {
+  border: 1px solid  #e6e6e6;
+}
+.details_new .details_container .Item_box3 .Item:nth-child(even) {
+  margin-right: 0;
 }
 .details_about {
   margin-top: 0.88rem;
@@ -924,6 +959,7 @@ footer p {
   display: inline-block;
   width: 25%;
   text-align: center;
+  margin-left: -3px;
 }
 .details_about .details_menu .menu_Box a.active {
   color: #c70c1f;
@@ -939,10 +975,22 @@ footer p {
   font-weight: bold;
 }
 .details_about .details_container p {
-  font-size: 0.28rem;
-  text-align: left;
-  text-indent: 0.48rem;
-  margin: 0.15rem 0 ;
+  font-size: 0.28rem!important;
+  text-align: left!important;
+  text-indent: 0.48rem!important;
+  margin: 0.15rem 0 !important;
+}
+.details_about .details_container span {
+  font-size: 0.28rem !important;
+  text-align: left!important;
+  text-indent: 0.48rem!important;
+  margin: 0.15rem 0 !important;
+}
+.details_about .details_container em {
+  font-size: 0.28rem!important;
+  text-align: left!important;
+  text-indent: 0.48rem!important;
+  margin: 0.15rem 0 !important;
 }
 .details_about .details_container img {
   width: 100%;
@@ -1011,6 +1059,12 @@ footer p {
   color: #989696;
   line-height: 0.5rem;
 }
+.details_newXq .details_container div span {
+  font-size: 0.28rem !important;
+  display: block !important;
+  overflow: hidden;
+  color: #333 !important;
+}
 .details_newXq .details_container p {
   font-size: 0.28rem;
   text-align: left;
@@ -1019,7 +1073,8 @@ footer p {
   line-height: 0.4rem;
 }
 .details_newXq .details_container img {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
 }
 .details_caseXq {
   margin-top: 0.88rem;
@@ -1071,8 +1126,7 @@ footer p {
   vertical-align: middle;
 }
 .details_caseXq .details_container {
-  width: auto;
-  margin: 0.24rem;
+  margin: 0.25rem;
   background: #fff;
   border: 1px solid #e6e6e6;
   padding: 0.24rem;
@@ -1103,21 +1157,26 @@ footer p {
   line-height: 0.42rem;
 }
 .details_caseXq .details_container .pr_js .right p {
-  font-size: 0.22rem;
+  font-size: 0.24rem;
   line-height: 0.34rem;
+}
+.details_caseXq .details_container .pr_tw {
+  width: 100%;
 }
 .details_caseXq .details_container .pr_tw .tw_title {
   border-left: 0.05rem solid #c70c1f;
   line-height: 0.35rem;
   text-indent: 0.2rem;
-  font-size: 0.26rem;
+  font-size: 0.28rem;
   margin: 0.2rem 0;
+  font-weight: bold;
 }
 .details_caseXq .details_container .pr_tw .tw {
   width: 100%;
 }
 .details_caseXq .details_container .pr_tw .tw img {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
 }
 .details_contact {
   margin-top: 0.88rem;

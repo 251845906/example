@@ -1,11 +1,10 @@
+
+
+
 body{
-  margin:0 auto;
   background: #f9f9f9;
-  width: 100%;
-}
-@media screen and (min-width: 750px){
-  body{
-  }
+  width:7.5rem;
+  margin:0 auto !important;
 }
 header{
   height: 0.88rem;
@@ -97,15 +96,16 @@ header{
   }
 }
 .menu{
-  padding:0.33rem 0.33rem 0.2rem 0.33rem;
+  padding:0.33rem 0;
   a{
     display: inline-block;
-    margin-right:0.64rem;
-    width: 1.2rem;
+    //margin-right:0.64rem;
+    width: 25%;
     span{
       display: block;
       width: 1.2rem;
       height: 1.2rem;
+      margin:0 auto;
       img{
         width: 100%;
         height:100%;
@@ -131,6 +131,7 @@ header{
     }
   }
   .product_container{
+    width: 100%;
     h3{
       font-size: 0.28rem;
       border-bottom: 1px solid #e6e6e6;
@@ -153,15 +154,15 @@ header{
     .product_List{
       padding:0.3rem;
       .big_List{
-        width: 6.48rem;
-        height: 3.78rem;
+        height: 4.28rem;
         background: #fff;
         padding:0.2rem;
         border:1px solid #e6e6e6;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.3rem;
         a{
           display: block;
-          width: 6.48rem;
+          //width: 6.48rem;
+          width: 100%;
           height: 2.4rem;
           img{
             width: 100%;
@@ -180,7 +181,7 @@ header{
         }
         p{
           font-size:0.24rem;
-          line-height: 0.34rem;
+          line-height: 0.36rem;
           overflow: hidden;
           display: -webkit-box;
           -webkit-line-clamp: 3;
@@ -190,12 +191,12 @@ header{
       }
       .small_List{
         .List_cont {
-          width: 3.01rem;
-          height: 4.45rem;
+          width: 2.95rem;
+          height: 5rem;
           background: #fff;
           padding: 0.14rem;
           border: 1px solid #e6e6e6;
-          margin-right: 0.2rem;
+          margin-right: 0.3rem;
           overflow: hidden;
           a {
             display: block;
@@ -209,7 +210,7 @@ header{
           h4 {
             margin-top: 0.12rem;
             font-size:0.28rem;
-            line-height: 0.34rem;
+            line-height: 0.4rem;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -218,7 +219,7 @@ header{
           }
           p {
             font-size: 0.24rem;
-            line-height: 0.3rem;
+            line-height: 0.34rem;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 3;
@@ -238,7 +239,6 @@ header{
   h2{
     text-align: center;
     background: #fff;
-    height: 0.7rem;
     padding-top: 0.5rem;
     img{
       width: 4.5rem;
@@ -252,7 +252,7 @@ header{
     a{
       line-height: 0.45rem;
       display: inline-block;
-      width: 2.48rem;
+      width: 33%;
       text-align: center;
       font-size: 0.3rem;
       border-right:1px solid #e6e6e6;
@@ -270,7 +270,7 @@ header{
     .Item_01{
       a{
         display: block;
-        height:1.4rem;
+        height:1.5rem;
         background: #fff;
         border: 1px solid  #e6e6e6;
         border-bottom: none;
@@ -288,10 +288,14 @@ header{
             line-height: 0.6rem;
             margin: 0.2rem 0 0 0;
           }
+          p{
+            font-size: 0.24rem;
+            color:#666;
+          }
         }
         .right{
           margin-top: 0.05rem;
-          width: 4.5rem;
+          width: 4.55rem;
           height: 100%;
           h3{
             font-size: 0.28rem;
@@ -301,6 +305,7 @@ header{
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             word-break: break-all;
+            font-weight: bold;
           }
           p{
             line-height: 0.34rem;
@@ -311,6 +316,7 @@ header{
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
               word-break: break-all;
+
             }
             span{
               color:#c70c1f;
@@ -325,32 +331,36 @@ header{
     }
     .Item_02{
       display: none;
-      a {
+      a{
         display: block;
-        height: 1.4rem;
+        height:1.5rem;
         background: #fff;
-        border: 1px solid #e6e6e6;
+        border: 1px solid  #e6e6e6;
         border-bottom: none;
         padding: 0.2rem;
-        .left {
+        .left{
           width: 1.6rem;
           height: 100%;
-          border: 1px solid #e6e6e6;
+          border:1px solid #e6e6e6;
           text-align: center;
           margin-right: 0.37rem;
-          b {
+          b{
             font-size: 0.5rem;
-            color: #666;
+            color:#666;
             display: block;
             line-height: 0.6rem;
             margin: 0.2rem 0 0 0;
           }
+          p{
+            font-size: 0.24rem;
+            color:#666;
+          }
         }
-        .right {
+        .right{
           margin-top: 0.05rem;
-          width: 4.5rem;
+          width: 4.55rem;
           height: 100%;
-          h3 {
+          h3{
             font-size: 0.28rem;
             line-height: 0.34rem;
             overflow: hidden;
@@ -358,33 +368,35 @@ header{
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             word-break: break-all;
+            font-weight: bold;
           }
-          p {
+          p{
             line-height: 0.34rem;
-            em {
+            em{
               font-size: 0.24rem;
               overflow: hidden;
               display: -webkit-box;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
               word-break: break-all;
+
             }
-            span {
-              color: #c70c1f;
+            span{
+              color:#c70c1f;
               font-size: 0.24rem;
             }
           }
         }
       }
-      a:last-child {
-        border: 1px solid #e6e6e6;
+      a:last-child{
+        border: 1px solid  #e6e6e6;
       }
     }
     .Item_03{
       display: none;
       .IssueBox{
         display: block;
-        height:1.4rem;
+        height:1.5rem;
         background: #fff;
         border: 1px solid  #e6e6e6;
         border-bottom: none;
@@ -427,7 +439,8 @@ header{
           }
           em{
             float: left;
-            width: 5.8rem;
+            //width: 5.8rem;
+            width: 90%;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -461,12 +474,13 @@ footer{
     color:#fff;
   }
   p{
-    font-size: 0.2rem;
+    font-size: 0.24rem;
     text-align: center;
   }
 }
 .footer_menu{
   height: 0.98rem;
+  //width: 7.5rem;
   width: 100%;
   background: #c70c1f;
   position: fixed;
@@ -544,6 +558,7 @@ footer{
       }
     }
   }
+
   .details_menu{
     width: 100%;
     background: #fff;
@@ -553,10 +568,11 @@ footer{
     .menu_Box{
       width: 100%;
       a{
-        font-size: 0.28rem;
+        font-size: 0.26rem;
         display: inline-block;
         width: 25%;
         text-align: center;
+        margin-left: -3px;
       }
       a.active{
         color:#c70c1f;
@@ -569,18 +585,21 @@ footer{
       width: 100%;
       display: none;
       .Item{
-        width: 3.1rem;
+        width: 3.05rem;
         overflow: hidden;
-        margin-right: 0.2rem;
+        margin-right: 0.3rem;
         margin-bottom: 0.24rem;
         background: #fff;
         padding: 0.12rem;
         border:1px solid #e6e6e6;
+        height: 3.8rem;
         a{
           display: block;
           width: 100%;
+          height: 2.1rem;
           img{
             width: 100%;
+            height: 100%;
           }
         }
         h4{
@@ -689,6 +708,7 @@ footer{
         display: inline-block;
         width: 25%;
         text-align: center;
+        margin-left: -3px;
       }
       a.active{
         color:#c70c1f;
@@ -700,7 +720,7 @@ footer{
     .Item_box1{
       .Item{
         display: block;
-        height:1.4rem;
+        height:1.5rem;
         background: #fff;
         border: 1px solid  #e6e6e6;
         border-bottom: none;
@@ -718,6 +738,10 @@ footer{
             line-height: 0.6rem;
             margin: 0.2rem 0 0 0;
           }
+          p{
+            font-size: 0.24rem;
+            color: #666;
+          }
         }
         .right{
           margin-top: 0.05rem;
@@ -731,6 +755,7 @@ footer{
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             word-break: break-all;
+            font-weight: bold;
           }
           p{
             line-height: 0.34rem;
@@ -760,7 +785,7 @@ footer{
       display: none;
       .Item{
         display: block;
-        height:1.4rem;
+        height:1.8rem;
         background: #fff;
         border: 1px solid  #e6e6e6;
         border-bottom: none;
@@ -778,6 +803,10 @@ footer{
             line-height: 0.6rem;
             margin: 0.2rem 0 0 0;
           }
+          p{
+            font-size: 0.24rem;
+            color: #666;
+          }
         }
         .right{
           margin-top: 0.05rem;
@@ -791,6 +820,7 @@ footer{
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             word-break: break-all;
+            font-weight: bold;
           }
           p{
             line-height: 0.34rem;
@@ -818,61 +848,124 @@ footer{
     }
     .Item_box3{
       display: none;
-      .IssueBox{
+      .Item{
         display: block;
-        height:1.4rem;
+        height:1.8rem;
         background: #fff;
         border: 1px solid  #e6e6e6;
         border-bottom: none;
         padding: 0.2rem;
-        .ask{
-          margin: 0.1rem 0;
+        .left{
+          width: 1.6rem;
+          height: 100%;
+          border:1px solid #e6e6e6;
+          text-align: center;
+          margin-right: 0.37rem;
           b{
-            float: left;
-            width: 0.4rem;
-            height: 0.4rem;
-            background: #c70c1f;
-            color: #fff;
-            line-height: 0.4rem;
-            text-align: center;
-            font-size: 0.24rem;
-            margin-right: 0.2rem;
+            font-size: 0.5rem;
+            color:#666;
+            display: block;
+            line-height: 0.6rem;
+            margin: 0.2rem 0 0 0;
           }
-          em{
-            float: left;
-            width: 5.8rem;
+          p{
+            font-size: 0.24rem;
+            color: #666;
+          }
+        }
+        .right{
+          margin-top: 0.05rem;
+          width: 4.5rem;
+          height: 100%;
+          h3{
+            font-size: 0.28rem;
+            line-height: 0.34rem;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             word-break: break-all;
-            font-size: 0.24rem;
+            font-weight: bold;
+          }
+          p{
+            line-height: 0.34rem;
+            em{
+              font-size: 0.24rem;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              word-break: break-all;
+            }
+            span{
+              color:#c70c1f;
+              font-size: 0.24rem;
+            }
           }
         }
-        .answer{
-          b{
-            float: left;
-            width: 0.4rem;
-            height: 0.4rem;
-            background: #666666;
-            color: #fff;
-            line-height: 0.4rem;
-            text-align: center;
-            font-size: 0.24rem;
-            margin-right: 0.2rem;
-          }
-          em{
-            float: left;
-            width: 5.8rem;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            word-break: break-all;
-            font-size: 0.24rem;
-          }
+        .Item:last-child{
+          border: 1px solid  #e6e6e6;
         }
       }
+      .Item:nth-child(even){
+        margin-right: 0;
+      }
+      //display: none;
+      //.IssueBox{
+      //  display: block;
+      //  height:1.4rem;
+      //  background: #fff;
+      //  border: 1px solid  #e6e6e6;
+      //  border-bottom: none;
+      //  padding: 0.2rem;
+      //  .ask{
+      //    margin: 0.1rem 0;
+      //    b{
+      //      float: left;
+      //      width: 0.4rem;
+      //      height: 0.4rem;
+      //      background: #c70c1f;
+      //      color: #fff;
+      //      line-height: 0.4rem;
+      //      text-align: center;
+      //      font-size: 0.24rem;
+      //      margin-right: 0.2rem;
+      //    }
+      //    em{
+      //      float: left;
+      //      width: 5.8rem;
+      //      overflow: hidden;
+      //      display: -webkit-box;
+      //      -webkit-line-clamp: 1;
+      //      -webkit-box-orient: vertical;
+      //      word-break: break-all;
+      //      font-size: 0.24rem;
+      //    }
+      //  }
+      //  .answer{
+      //    b{
+      //      float: left;
+      //      width: 0.4rem;
+      //      height: 0.4rem;
+      //      background: #666666;
+      //      color: #fff;
+      //      line-height: 0.4rem;
+      //      text-align: center;
+      //      font-size: 0.24rem;
+      //      margin-right: 0.2rem;
+      //    }
+      //    em{
+      //      float: left;
+      //      width: 5.8rem;
+      //      overflow: hidden;
+      //      display: -webkit-box;
+      //      -webkit-line-clamp: 2;
+      //      -webkit-box-orient: vertical;
+      //      word-break: break-all;
+      //      font-size: 0.24rem;
+      //    }
+      //  }
+      //}
     }
   }
 }
@@ -937,6 +1030,7 @@ footer{
         display: inline-block;
         width: 25%;
         text-align: center;
+        margin-left: -3px;
       }
       a.active{
         color:#c70c1f;
@@ -953,10 +1047,22 @@ footer{
       font-weight: bold;
     }
     p{
-      font-size: 0.28rem;
-      text-align: left;
-      text-indent: 0.48rem;
-      margin:0.15rem 0 ;
+      font-size: 0.28rem!important;
+      text-align: left!important;
+      text-indent: 0.48rem!important;
+      margin:0.15rem 0 !important;
+    }
+    span{
+      font-size: 0.28rem !important;
+      text-align: left!important;
+      text-indent: 0.48rem!important;
+      margin:0.15rem 0 !important;
+    }
+    em{
+      font-size: 0.28rem!important;
+      text-align: left!important;
+      text-indent: 0.48rem!important;
+      margin:0.15rem 0 !important;
     }
     img{
       width: 100%;
@@ -1009,6 +1115,7 @@ footer{
         background: url("../images/y.png") no-repeat center;
         vertical-align: middle;
       }
+
     }
   }
   .details_container{
@@ -1025,6 +1132,14 @@ footer{
       color:#989696;
       line-height: 0.5rem;
     }
+    div{
+      span{
+        font-size: 0.28rem !important;
+        display: block !important;
+        overflow: hidden;
+        color: #333 !important;
+      }
+    }
     p{
       font-size: 0.28rem;
       text-align: left;
@@ -1033,11 +1148,13 @@ footer{
       line-height: 0.4rem;
     }
     img{
-      width: 100%;
+      width: 100% !important;
+      height: auto !important;
     }
   }
 }
 .details_caseXq{
+
   margin-top: 0.88rem;
   width: 100%;
   .title{
@@ -1086,8 +1203,8 @@ footer{
     }
   }
   .details_container {
-    width: auto;
-    margin:0.24rem;
+    //width: 7rem;
+    margin:0.25rem;
     background: #fff;
     border:1px solid #e6e6e6;
     padding:0.24rem;
@@ -1115,29 +1232,33 @@ footer{
           line-height: 0.42rem;
         }
         p{
-          font-size: 0.22rem;
+          font-size: 0.24rem;
           line-height: 0.34rem;
         }
       }
     }
     .pr_tw{
+      width: 100%;
       .tw_title{
         border-left:0.05rem solid #c70c1f;
         line-height: 0.35rem;
         text-indent: 0.2rem;
-        font-size: 0.26rem;
+        font-size: 0.28rem;
         margin:0.2rem 0;
+        font-weight: bold;
       }
       .tw{
         width: 100%;
         img{
-          width: 100%;
+          width: 100% !important;
+          height: auto !important;
         }
       }
     }
   }
 }
 .details_contact{
+
   margin-top: 0.88rem;
   width: 100%;
   .title{
@@ -1222,3 +1343,4 @@ footer{
     }
   }
 }
+
