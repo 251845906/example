@@ -53,10 +53,13 @@ $(window).scroll(function(){
 })
 if($('.adside').html() !== undefined ){
     var $left = $('.case .container').offset().left;
-    $('.adside').css('left',$left-50);
+    $('.adside').css('right',$left-180+"px");
+
     $(window).resize(function() {
         var $left = $('.case .container').offset().left;
-        $('.adside').css('left',$left-50)
+
+        $('.adside').css('right',$left-180+"px")
+
     });
     $('.to_top').click(function(){
         $('body,html').animate({
