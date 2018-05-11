@@ -267,6 +267,10 @@ body {
   height: 308px;
   margin: 0 6px;
 }
+.section_01 .section_fang_menu a:hover {
+  box-shadow: 0px 0px 20px #969696;
+  transition: .3s;
+}
 .section_01 .section_yuan_menu .Item {
   cursor: pointer;
   float: left;
